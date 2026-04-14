@@ -123,6 +123,15 @@ a:hover{text-decoration:underline}
 .daytrip-banner{background:linear-gradient(135deg,#e8f4f0,#f0f7f4);border:1px solid #b8ddd0;border-radius:8px;padding:14px 18px;margin:14px 0;font-size:.85rem}
 .daytrip-banner strong{color:#2d8a6e}
 
+/* Weather widget */
+.weather{display:inline-flex;align-items:center;padding:3px 10px;border-radius:14px;background:#f3f0eb;font-size:.74rem;color:#6b6560;margin-left:8px;border:1px solid #e8e4de;vertical-align:middle;gap:5px;line-height:1.4}
+.weather .w-icon{font-size:.95rem;line-height:1}
+.weather .w-temp{color:#3a3631;font-weight:500}
+.weather .w-rain{color:#5c6bc0}
+.weather .w-warn{color:#c45d3e;font-weight:500}
+.weather .w-na{color:#aaa;font-size:.7rem;font-style:italic}
+.weather .w-loc{color:#8a8480;font-size:.68rem}
+
 /* Mapbox popup customization */
 .mapboxgl-popup-content{font-family:'Noto Sans SC',sans-serif;padding:14px 18px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.18);max-width:240px}
 .mapboxgl-popup-content .pop-name{font-weight:600;color:#3a3631;font-size:.92rem;margin-bottom:4px}
@@ -164,8 +173,8 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="nav" id="nav">
-<a class="on" onclick="go('fukuoka',this)">福冈 5天</a><span class="sep">→</span>
-<a onclick="go('kumamoto',this)">熊本 7天</a><span class="sep">→</span>
+<a class="on" onclick="go('fukuoka',this)">福冈 4天</a><span class="sep">→</span>
+<a onclick="go('kumamoto',this)">熊本 5天</a><span class="sep">→</span>
 <a onclick="go('kurokawa',this)">黑川 2天</a><span class="sep">→</span>
 <a onclick="go('ret',this)">回福冈</a>
 <a onclick="go('info',this)" style="margin-left:8px;background:#f3f0eb">📋 实用信息</a>
@@ -218,7 +227,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day1">
-<h3>Day 1 · 4/30（周四）抵达与汇合</h3>
+<h3>Day 1 · 4/30（周四）抵达与汇合 <span class="weather" data-date="2026-04-30" data-city="fukuoka">⏳ 福冈</span></h3>
 <span class="tag tag-eat">吃</span>
 <p>MM飞抵福冈，河马从日本其他城市来汇合。下午放好行李，傍晚出动。</p>
 
@@ -239,7 +248,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day2">
-<h3>Day 2 · 5/1（周五）博多老城区</h3>
+<h3>Day 2 · 5/1（周五）博多老城区 <span class="weather" data-date="2026-05-01" data-city="fukuoka">⏳ 福冈</span></h3>
 <span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
 
 <div class="meal m-breakfast"><div class="meal-label lb">早餐 · 酒店附近或博多站</div>
@@ -264,7 +273,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day3">
-<h3>Day 3 · 5/2（周六）天神 · 大名小巷</h3>
+<h3>Day 3 · 5/2（周六）天神 · 大名小巷 <span class="weather" data-date="2026-05-02" data-city="fukuoka">⏳ 福冈</span></h3>
 <span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
 
 <div class="meal m-breakfast" id="r-rec"><div class="meal-label lb">早餐 · 大名区咖啡店</div>
@@ -290,7 +299,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day4">
-<h3>Day 4 · 5/3（周六）糸岛半日</h3>
+<h3>Day 4 · 5/3（周日）糸岛半日 <span class="weather" data-date="2026-05-03" data-city="fukuoka">⏳ 糸岛</span></h3>
 <span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
 
 <div class="transport">
@@ -357,7 +366,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day5">
-<h3>Day 5 · 5/4（周一·振替休日）福冈 → 熊本</h3>
+<h3>Day 5 · 5/4（周一·振替休日）福冈 → 熊本 <span class="weather" data-date="2026-05-04" data-city="kumamoto">⏳ 熊本</span></h3>
 <span class="tag tag-train">火车</span><span class="tag tag-eat">吃</span>
 
 <div class="transport">
@@ -381,7 +390,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day6">
-<h3>Day 6 · 5/5（周二·儿童节）熊本市内深度日</h3>
+<h3>Day 6 · 5/5（周二·儿童节）熊本市内深度日 <span class="weather" data-date="2026-05-05" data-city="kumamoto">⏳ 熊本</span></h3>
 <span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
 
 <p>上午去<strong>水前寺成趣园</strong>——日式庭园，走一圈20分钟。</p>
@@ -401,7 +410,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day7">
-<h3>Day 7 · 5/6（周三·黄金周末日）🌋 日归阿苏</h3>
+<h3>Day 7 · 5/6（周三·黄金周末日）🌋 日归阿苏 <span class="weather" data-date="2026-05-06" data-city="aso">⏳ 阿苏</span></h3>
 <span class="tag tag-daytrip">日归</span><span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
 
 <div class="daytrip-banner"><strong>🚂 核心日归 #1</strong>。黄金周最后一天，阿苏可能稍多人但比城市好得多。行李留在熊本酒店，轻装一日。</div>
@@ -424,7 +433,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day8">
-<h3>Day 8 · 5/7（周四）🐗 日归鹿儿岛</h3>
+<h3>Day 8 · 5/7（周四）🐗 日归鹿儿岛 <span class="weather" data-date="2026-05-07" data-city="kagoshima">⏳ 鹿儿岛</span></h3>
 <span class="tag tag-daytrip">日归</span><span class="tag tag-train">火车</span><span class="tag tag-eat">吃</span>
 
 <div class="daytrip-banner"><strong>🚅 核心日归 #2</strong>。九州新干线只要 45 分钟就到。</div>
@@ -463,7 +472,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day9">
-<h3>Day 9 · 5/8（周五）灵活日</h3>
+<h3>Day 9 · 5/8（周五）灵活日 <span class="weather" data-date="2026-05-08" data-city="kumamoto">⏳ 熊本</span></h3>
 <span class="tag tag-rest">灵活</span>
 
 <p>就剩这一天灵活安排了，看心情和精力。可以做这些选择之一：</p>
@@ -515,7 +524,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day10">
-<h3>Day 10 · 5/9（周六）熊本 → 黑川温泉</h3>
+<h3>Day 10 · 5/9（周六）熊本 → 黑川温泉 <span class="weather" data-date="2026-05-09" data-city="kurokawa">⏳ 黑川</span></h3>
 <span class="tag tag-train">移动</span><span class="tag tag-onsen">温泉</span>
 
 <div class="transport">
@@ -576,7 +585,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="day" id="day11">
-<h3>Day 11 · 5/10（周日）黑川温泉 · 纯粹放空</h3>
+<h3>Day 11 · 5/10（周日）黑川温泉 · 纯粹放空 <span class="weather" data-date="2026-05-10" data-city="kurokawa">⏳ 黑川</span></h3>
 <span class="tag tag-onsen">温泉</span>
 
 <p>上午在旅馆里泡<strong>晨汤</strong>。然后在村里散步，逛逛小店。下午用入汤手形再去泡一两家。</p>
@@ -596,7 +605,7 @@ a:hover{text-decoration:underline}
 <div class="sec-date">5/11（周一）</div>
 
 <div class="day" id="day12">
-<h3>Day 12 · 5/11（周一）黑川 → 福冈机场</h3>
+<h3>Day 12 · 5/11（周一）黑川 → 福冈机场 <span class="weather" data-date="2026-05-11" data-city="kurokawa">⏳ 黑川</span></h3>
 <span class="tag tag-train">移动</span>
 
 <div class="transport">
@@ -652,8 +661,8 @@ a:hover{text-decoration:underline}
 <button class="show-all" onclick="showAll()">展开全部行程</button>
 
 <div class="footer">
-为 MM 和 🦛 定制的九州慢旅行方案 v6（精简版）<br>
-3 个住宿基地 · 11 晚 · 2026 年 4 月 14 日更新
+为 MM 和 🦛 定制的九州慢旅行方案 v6.1（含天气预报）<br>
+3 个住宿基地 · 11 晚 · 2026 年 4 月 14 日更新 · 天气数据 by Open-Meteo
 </div>
 
 </div>
@@ -846,6 +855,77 @@ maps.kurokawa.on('load', () => addMarkers(maps.kurokawa, KUROKAWA_MARKERS));
 const styleEl = document.createElement('style');
 styleEl.textContent = '.highlight-target{background:#fff8e1!important;transition:background 1.8s}';
 document.head.appendChild(styleEl);
+
+// ============= 天气预报（Open-Meteo 免费 API） =============
+const WEATHER_CITIES = {
+  fukuoka:   {lat: 33.59, lon: 130.40, label: '福冈'},
+  kumamoto:  {lat: 32.80, lon: 130.71, label: '熊本'},
+  aso:       {lat: 32.95, lon: 131.11, label: '阿苏'},
+  kagoshima: {lat: 31.58, lon: 130.54, label: '鹿儿岛'},
+  kurokawa:  {lat: 33.10, lon: 131.15, label: '黑川'},
+};
+function wmoIcon(c) {
+  if (c === 0) return '☀️';
+  if (c <= 2) return '🌤️';
+  if (c === 3) return '☁️';
+  if (c === 45 || c === 48) return '🌫️';
+  if (c <= 57) return '🌦️';
+  if (c <= 67) return '🌧️';
+  if (c <= 77) return '🌨️';
+  if (c <= 82) return '🌦️';
+  if (c <= 86) return '🌨️';
+  if (c >= 95) return '⛈️';
+  return '🌤️';
+}
+function wmoDesc(c) {
+  const d = {0:'晴',1:'晴间多云',2:'多云',3:'阴',45:'雾',48:'雾凇',51:'轻度毛毛雨',53:'毛毛雨',55:'强毛毛雨',56:'冻毛毛雨',57:'强冻毛毛雨',61:'小雨',63:'中雨',65:'大雨',66:'冻雨',67:'强冻雨',71:'小雪',73:'中雪',75:'大雪',77:'雪粒',80:'阵雨',81:'强阵雨',82:'暴雨',85:'阵雪',86:'强阵雪',95:'雷阵雨',96:'雷阵雨带冰雹',99:'强雷阵雨带冰雹'};
+  return d[c] || '';
+}
+async function loadWeather() {
+  const cache = {};
+  for (const [key, city] of Object.entries(WEATHER_CITIES)) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FTokyo&start_date=2026-04-30&end_date=2026-05-11`;
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      cache[key] = data.daily;
+    } catch (e) {
+      cache[key] = null;
+    }
+  }
+  document.querySelectorAll('.weather').forEach(el => {
+    const date = el.dataset.date;
+    const cityKey = el.dataset.city;
+    const cityLabel = WEATHER_CITIES[cityKey] ? WEATHER_CITIES[cityKey].label : '';
+    const daily = cache[cityKey];
+    if (!daily || !daily.time) {
+      el.innerHTML = `<span class="w-na">🌐 ${cityLabel} · 天气加载失败</span>`;
+      return;
+    }
+    const idx = daily.time.indexOf(date);
+    if (idx === -1 || daily.temperature_2m_max[idx] == null) {
+      el.innerHTML = `<span class="w-na">📅 ${cityLabel} · 等临近出行刷新</span>`;
+      return;
+    }
+    const code = daily.weathercode[idx];
+    const tmax = Math.round(daily.temperature_2m_max[idx]);
+    const tmin = Math.round(daily.temperature_2m_min[idx]);
+    const rain = daily.precipitation_probability_max[idx] || 0;
+    const icon = wmoIcon(code);
+    const desc = wmoDesc(code);
+    let html = `<span class="w-icon">${icon}</span>`;
+    html += `<span class="w-loc">${cityLabel}</span>`;
+    html += `<span class="w-temp">${tmin}-${tmax}°C</span>`;
+    if (rain >= 40) {
+      html += `<span class="w-warn">☔${rain}%</span>`;
+    } else if (rain >= 15) {
+      html += `<span class="w-rain">💧${rain}%</span>`;
+    }
+    el.innerHTML = html;
+    el.title = `${cityLabel} · ${date} · ${desc} · ${tmin}-${tmax}°C · 降水概率 ${rain}%`;
+  });
+}
+loadWeather();
 </script>
 
 </body>
