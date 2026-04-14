@@ -56,13 +56,41 @@ a:hover{text-decoration:underline}
 .meal .hours{font-size:.78rem;color:#5c6bc0;margin-top:4px;background:#eef0f7;padding:3px 8px;border-radius:4px;display:inline-block}
 .meal .hours-warn{color:#c45d3e;background:#fef0e7}
 .meal .price{font-size:.8rem;color:#c45d3e;margin-top:3px}
-.highlight-target{background:#fff8e1;transition:background 1.5s}
+.highlight-target{background:#fff8e1!important;transition:background 1.8s}
 
 .transport{background:#f7f5f2;border-radius:8px;padding:12px 16px;margin:10px 0;font-size:.85rem;color:#6b6560}
 .transport strong{color:#3a3631}
 .transport .backup{margin-top:6px;padding-top:6px;border-top:1px dashed #ddd;font-size:.82rem;color:#8a8480}
-.transport .time-box{background:#fff;border:1px dashed #c45d3e;padding:6px 10px;border-radius:6px;margin-top:6px;font-size:.82rem;color:#3a3631}
-.transport .time-box strong{color:#c45d3e}
+
+/* Timetable block */
+.timetable{background:#fff;border:1px solid #e0dcd7;border-radius:8px;padding:10px 14px;margin:8px 0;font-family:'SF Mono','Menlo','Consolas',monospace;font-size:.82rem}
+.timetable .tt-head{font-family:'Noto Sans SC',sans-serif;font-size:.8rem;color:#6b6560;margin-bottom:6px;font-weight:500}
+.timetable .tt-row{display:flex;justify-content:space-between;align-items:baseline;padding:4px 0;border-bottom:1px dashed #f0ece7;gap:10px}
+.timetable .tt-row:last-child{border-bottom:none}
+.timetable .tt-time{color:#c45d3e;font-weight:600;letter-spacing:.02em}
+.timetable .tt-train{color:#8a8480;font-size:.78rem;font-family:'Noto Sans SC',sans-serif}
+.timetable .tt-dur{color:#6b6560;font-size:.78rem}
+.timetable .tt-note{margin-top:6px;padding-top:6px;border-top:1px dashed #f0ece7;font-size:.76rem;color:#8a8480;font-family:'Noto Sans SC',sans-serif;font-style:italic}
+.timetable.tt-return{background:#f7f5f2}
+.timetable .tt-last{color:#c45d3e;font-weight:600;font-family:'Noto Sans SC',sans-serif;font-size:.78rem;margin-top:4px}
+
+/* Literary/Film callout */
+.culture{background:linear-gradient(135deg,#faf5ec,#f7eddb);border:1px solid #e8d9b8;border-left:4px solid #b8895c;border-radius:8px;padding:14px 18px;margin:14px 0;font-size:.86rem}
+.culture .c-type{font-size:.7rem;color:#b8895c;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;font-weight:600}
+.culture .c-title{font-weight:600;color:#3a3631;font-size:.95rem;margin-bottom:3px;font-family:'Noto Serif SC',serif}
+.culture .c-trans{color:#8a8480;font-size:.8rem;margin-bottom:3px;font-weight:400;font-family:'Noto Sans SC',sans-serif}
+.culture .c-creator{color:#6b6560;font-size:.78rem;margin-bottom:8px;font-style:italic}
+.culture .c-desc{color:#3a3631;line-height:1.8;font-size:.85rem}
+.culture .c-rec{margin-top:8px;padding-top:8px;border-top:1px dashed #e8d9b8;font-size:.82rem;color:#b8895c;font-weight:500}
+.culture .c-rec::before{content:'📌 '}
+
+/* Reading/watching recommendation block */
+.read-watch{background:#fdfbf7;border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.read-watch h4{font-size:.95rem;color:#b8895c;margin-bottom:10px;font-family:'Noto Serif SC',serif}
+.read-watch .rw-item{padding:8px 0;border-bottom:1px dashed #ece8e3}
+.read-watch .rw-item:last-child{border-bottom:none}
+.read-watch .rw-name{font-weight:500;color:#3a3631;font-size:.88rem}
+.read-watch .rw-meta{color:#8a8480;font-size:.78rem;margin-top:2px}
 
 .hotels{margin:16px 0}
 .hotels h4{font-size:.9rem;color:#3a3631;margin-bottom:8px}
@@ -74,6 +102,15 @@ a:hover{text-decoration:underline}
 .hotel .h-link{font-size:.8rem;margin-top:3px}
 .hotel.h-ryokan{border-color:#2d8a6e;background:#f7fcfa}
 .hotel.h-ryokan .h-name{color:#2d8a6e}
+
+/* Cafe/Shop card */
+.cafe{background:#fdfcfa;border:1px solid #ece8e3;border-radius:8px;padding:12px 16px;margin:8px 0;font-size:.85rem;scroll-margin-top:80px}
+.cafe .cf-name{font-weight:500;color:#3a3631;font-size:.92rem}
+.cafe .cf-type{display:inline-block;font-size:.7rem;background:#f5eef8;color:#7b5ea7;padding:1px 7px;border-radius:8px;margin-left:6px;vertical-align:middle}
+.cafe .cf-addr{color:#8a8480;font-size:.78rem;margin-top:3px}
+.cafe .cf-note{color:#6b6560;margin-top:6px;font-size:.83rem;line-height:1.8}
+.cafe .cf-hours{font-size:.77rem;color:#5c6bc0;margin-top:6px;background:#eef0f7;padding:3px 8px;border-radius:4px;display:inline-block}
+.cafe .cf-hours-warn{color:#c45d3e;background:#fef0e7}
 
 .more{background:#f9f7f4;border:1px solid #ece8e3;border-radius:8px;padding:14px 16px;margin:12px 0}
 .more summary{font-size:.88rem;font-weight:500;color:#7b5ea7;cursor:pointer;list-style:none}
@@ -88,6 +125,7 @@ a:hover{text-decoration:underline}
 .tag-exp{background:#f5eef8;color:#7b5ea7}
 .tag-daytrip{background:#e8f4f0;color:#2d8a6e;border:1px solid #2d8a6e}
 .tag-rest{background:#f3f0eb;color:#6b6560}
+.tag-culture{background:#faf5ec;color:#b8895c;border:1px solid #e8d9b8}
 
 .notice{background:#fff3e0;border-left:3px solid #e6a23c;padding:14px 18px;margin:20px 0;border-radius:0 8px 8px 0;font-size:.85rem}
 .notice strong{color:#e6a23c}
@@ -99,7 +137,17 @@ a:hover{text-decoration:underline}
 .dt-card .dt-time{font-size:.78rem;color:#6b6560;margin-top:2px;font-style:italic}
 .dt-card .dt-desc{color:#6b6560;margin-top:6px;line-height:1.8}
 .dt-card .dt-highlight{color:#c45d3e;font-weight:500}
+.dt-card.dt-warning{background:#fef0e7;border-color:#f5c4b8}
+.dt-card.dt-warning .dt-name{color:#c45d3e}
 
+/* Arrival scenario card */
+.arrival{background:#fff;border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.06);border-left:4px solid #5c6bc0}
+.arrival h4{color:#5c6bc0;font-size:.95rem;margin-bottom:6px;font-family:'Noto Serif SC',serif}
+.arrival .arr-time{font-size:.78rem;color:#8a8480;font-style:italic;margin-bottom:10px}
+.arrival ol{margin:6px 0 6px 20px;font-size:.83rem;color:#6b6560;line-height:1.9}
+.arrival strong{color:#3a3631}
+
+/* Budget */
 .budget{background:#fff;border-radius:12px;padding:20px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .budget h3{font-size:1rem;margin-bottom:12px;color:#3a3631}
 .b-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f3f0eb;font-size:.86rem;gap:12px}
@@ -123,14 +171,12 @@ a:hover{text-decoration:underline}
 .daytrip-banner{background:linear-gradient(135deg,#e8f4f0,#f0f7f4);border:1px solid #b8ddd0;border-radius:8px;padding:14px 18px;margin:14px 0;font-size:.85rem}
 .daytrip-banner strong{color:#2d8a6e}
 
-/* Airbnb suggestion */
+/* Airbnb */
 .airbnb{background:linear-gradient(135deg,#fff5f3,#fef0ed);border:1px solid #f5c4b8;border-radius:8px;padding:14px 16px;margin:12px 0 6px;font-size:.85rem}
 .airbnb-title{font-weight:600;color:#FF5A5F;font-size:.92rem;margin-bottom:6px}
 .airbnb-desc{color:#6b6560;font-size:.83rem;margin-bottom:6px;line-height:1.7}
 .airbnb-area{font-size:.8rem;color:#3a3631;background:#fff;border-radius:4px;padding:6px 10px;margin:6px 0;border:1px dashed #f5c4b8}
 .airbnb-area strong{color:#FF5A5F}
-.airbnb-link{display:inline-block;margin-top:8px;padding:7px 14px;background:#FF5A5F;color:#fff!important;border-radius:18px;font-size:.8rem;font-weight:500;text-decoration:none;transition:.2s}
-.airbnb-link:hover{background:#e54549;text-decoration:none!important}
 
 /* Weather widget */
 .weather{display:inline-flex;align-items:center;padding:3px 10px;border-radius:14px;background:#f3f0eb;font-size:.74rem;color:#6b6560;margin-left:8px;border:1px solid #e8e4de;vertical-align:middle;gap:5px;line-height:1.4}
@@ -142,7 +188,7 @@ a:hover{text-decoration:underline}
 .weather .w-loc{color:#8a8480;font-size:.68rem}
 
 /* Mapbox popup customization */
-.mapboxgl-popup-content{font-family:'Noto Sans SC',sans-serif;padding:14px 18px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.18);max-width:240px}
+.mapboxgl-popup-content{font-family:'Noto Sans SC',sans-serif;padding:14px 18px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.18);max-width:260px}
 .mapboxgl-popup-content .pop-name{font-weight:600;color:#3a3631;font-size:.92rem;margin-bottom:4px}
 .mapboxgl-popup-content .pop-tag{display:inline-block;font-size:.68rem;padding:1px 7px;border-radius:8px;margin-bottom:6px}
 .mapboxgl-popup-content .pop-desc{color:#6b6560;font-size:.8rem;line-height:1.6;margin-bottom:8px}
@@ -155,9 +201,11 @@ a:hover{text-decoration:underline}
 .legend .lg.onsen::before{background:#2d8a6e}
 .legend .lg.daytrip::before{background:#5c6bc0}
 .legend .lg.flex::before{background:#7b5ea7}
-.legend .lg.hotel::before{background:#e6a23c}
+.legend .lg.cafe::before{background:#b8895c}
+.legend .lg.culture::before{background:#b8895c}
 .legend .lg.food::before{background:#c45d3e}
 .legend .lg.spot::before{background:#5c6bc0}
+.legend .lg.hotel::before{background:#e6a23c}
 .map-wrap{position:relative}
 </style>
 </head>
@@ -165,14 +213,14 @@ a:hover{text-decoration:underline}
 
 <div class="hero">
 <h1>MM & 🦛 九州完整行程</h1>
-<div class="sub">2026.4.30 — 5.11 ｜ 福冈 → 熊本 → 黑川 → 福冈</div>
-<div class="moves">只搬 3 次行李 · 熊本为日归基地 · 互动地图：可缩放 · 点击标记看详情</div>
+<div class="sub">2026.4.30 — 5.11 ｜ 熊本 9 晚 · 黑川 2 晚</div>
+<div class="moves">Airbnb 为家 · 日归福冈/阿苏/鹿儿岛 · 读书看电影 · 咖啡店慢坐</div>
 <div class="hero-map-wrap">
 <div class="map-wrap">
 <div id="map-cover" class="hero-map"></div>
 <div class="legend">
-<div class="lg city">城市基地</div>
-<div class="lg onsen">温泉</div>
+<div class="lg city">熊本</div>
+<div class="lg onsen">黑川</div>
 <div class="lg daytrip">核心日归</div>
 <div class="lg flex">灵活日归</div>
 </div>
@@ -182,170 +230,248 @@ a:hover{text-decoration:underline}
 </div>
 
 <div class="nav" id="nav">
-<a class="on" onclick="go('fukuoka',this)">福冈 4天</a><span class="sep">→</span>
-<a onclick="go('kumamoto',this)">熊本 5天</a><span class="sep">→</span>
-<a onclick="go('kurokawa',this)">黑川 2天</a><span class="sep">→</span>
-<a onclick="go('ret',this)">回福冈</a>
+<a class="on" onclick="go('prep',this)">📖 行前准备</a>
+<a onclick="go('day1',this)">Day 1 抵达</a>
+<a onclick="go('kumamoto',this)">熊本 9 晚</a>
+<a onclick="go('kurokawa',this)">黑川 2 晚</a>
+<a onclick="go('ret',this)">回家</a>
 <a onclick="go('info',this)" style="margin-left:8px;background:#f3f0eb">📋 实用信息</a>
 </div>
 
 <div class="container">
 
 <div class="notice"><strong>💴 货币标注：</strong>所有价格都标注了日元和人民币参考价（1日元≈0.048元人民币）。<br>
-<strong>⚡ 黄金周提醒：</strong>4/29-5/6是日本黄金周。前 5 天在福冈+移动到熊本（影响相对较小），5/7 后恢复正常。<strong>5/1-5/6 的住宿请尽快预订。</strong></div>
+<strong>⚡ 黄金周提醒：</strong>4/29-5/6是日本黄金周。熊本 Airbnb 已订好不受影响，但日归福冈/阿苏会稍挤。5/7 起恢复正常。</div>
 
-<!-- ==================== 福冈 ==================== -->
-<div class="sec show" id="fukuoka">
-<h2 class="sec-head">福冈</h2>
-<div class="sec-date">4/30（周四）— 5/3（周日）· 4晚</div>
-<div class="sec-vibe">九州最好吃的城市。用胃来感受就好。</div>
+<!-- ==================== 行前准备 ==================== -->
+<div class="sec show" id="prep">
+<h2 class="sec-head">📖 行前准备 · 读一本 · 看一部</h2>
+<div class="sec-vibe">去一个地方之前，先读过写它的书、看过拍它的电影，会让肉眼所见变得立体起来。下面按地区整理的文学/影视坐标，选你们感兴趣的提前接触，到了现场那些场景会自动跳出来。</div>
 
-<div class="map-wrap">
-<div id="map-fukuoka" class="sec-map"></div>
-<div class="legend">
-<div class="lg hotel">酒店</div>
-<div class="lg food">餐厅</div>
-<div class="lg spot">景点</div>
-</div>
-</div>
-<div class="sec-map-caption">🟠 3 家酒店 · 🔴 当地餐厅 · 🔵 主要景点 · 点击标记跳转详情</div>
+<!-- 熊本 -->
+<div class="read-watch">
+<h4>🟠 熊本 · 夏目漱石 · 小泉八云 · 宫本武藏</h4>
 
-<div class="hotels">
-<h4>🏨 住宿推荐（双床房）</h4>
-<div class="hotel" id="h-fk-blossom">
-<div class="h-name">JR九州ホテルブラッサム福岡（JR Kyushu Hotel Blossom Fukuoka）</div>
-<div class="h-price"><span class="yen">约 ¥13,000-16,000日元</span><span class="rmb">（约 624-768 元/晚）</span></div>
-<div class="h-note">直连博多站筑紫口，JR系列品质保证。有大浴场可以泡澡。出行坐火车最方便。</div>
-<div class="h-times">🕒 入住 15:00 · 退房 11:00</div>
-<div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=JR+Kyushu+Hotel+Blossom+Fukuoka" target="_blank">📍 Google Maps</a></div>
-</div>
-<div class="hotel" id="h-fk-comfort">
-<div class="h-name">コンフォートホテル博多（Comfort Hotel Hakata）</div>
-<div class="h-price"><span class="yen">约 ¥9,000-12,000日元</span><span class="rmb">（约 432-576 元/晚）</span></div>
-<div class="h-note">博多站对面，含免费早餐。连锁商务酒店品质稳定，性价比好。</div>
-<div class="h-times">🕒 入住 15:00 · 退房 10:00</div>
-<div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Comfort+Hotel+Hakata+Fukuoka" target="_blank">📍 Google Maps</a></div>
-</div>
-<div class="hotel" id="h-fk-dormy">
-<div class="h-name">ドーミーイン博多祇園（Dormy Inn Hakata Gion）</div>
-<div class="h-price"><span class="yen">约 ¥11,000-14,000日元</span><span class="rmb">（约 528-672 元/晚）</span></div>
-<div class="h-note">博多站和中洲之间。最大卖点：天然温泉大浴场+免费夜鸣拉面（21:30-23:00）。</div>
-<div class="h-times">🕒 入住 15:00 · 退房 11:00</div>
-<div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Dormy+Inn+Hakata+Gion+Fukuoka" target="_blank">📍 Google Maps</a></div>
+<div class="culture">
+<div class="c-type">小说 · Novel</div>
+<div class="c-title">夏目漱石《二百十日》</div>
+<div class="c-trans">中：二百十日（短篇/中篇）· 英：Two Hundred and Tenth Day (1906)</div>
+<div class="c-creator">夏目漱石 Natsume Sōseki</div>
+<div class="c-desc">1899 年 9 月漱石和同事山川信次郎亲自爬阿苏火山，途中遭遇台风暴雨差点回不来。回家后把这段经历写成小说，两个角色在登山过程中讨论社会阶级、贫富、人生意义，背景正是你们 Day 4 要去的**草千里、大观峰**。</div>
+<div class="c-rec">短！一个下午能看完中译本。看过再去草千里，感觉完全不同</div>
 </div>
 
-<div class="airbnb">
-<div class="airbnb-title">🏠 也可以试试 Airbnb（4 晚连住挺合适）</div>
-<div class="airbnb-desc">福冈是 Airbnb 资源很丰富的城市，4 晚连住选整套公寓往往能比商务酒店便宜，还有厨房和洗衣机。预算大概 <span class="yen">¥7,000-12,000/晚</span>（约 336-576 元）就能找到不错的整套公寓。</div>
-<div class="airbnb-area"><strong>推荐区域：</strong>博多站周边（最方便去新干线/机场）· 中洲川端（夜生活+屋台）· 天神（购物+吃喝）· 大名（文艺街区）</div>
-<div class="airbnb-area"><strong>筛选建议：</strong>整套公寓 · 至少 1 室 · "Superhost"（超赞房东）· 最近评价 4.8+ · 步行 5 分钟到地铁</div>
-<a class="airbnb-link" href="https://www.airbnb.com/s/Hakata--Fukuoka--Japan/homes?adults=2&checkin=2026-04-30&checkout=2026-05-04&room_types%5B%5D=Entire%20home%2Fapt" target="_blank">🔗 Airbnb 上搜博多 4/30-5/4</a>
+<div class="culture">
+<div class="c-type">小说 · Novel</div>
+<div class="c-title">夏目漱石《草枕》</div>
+<div class="c-trans">中：草枕 · 英：Kusamakura / The Three-Cornered World (1906)</div>
+<div class="c-creator">夏目漱石 Natsume Sōseki</div>
+<div class="c-desc">漱石在熊本教书期间去附近**小天温泉**泡汤的经历，写成这部"画家小说"。开头经典句"智に働けば角が立つ。情に棹させば流される"（以智行事则生棱角，任情而为则随波逐流）是日本人人皆知的名句。</div>
+<div class="c-rec">若时间充裕可再加读</div>
+</div>
+
+<div class="culture">
+<div class="c-type">短篇集 · Short Story Collection</div>
+<div class="c-title">小泉八雲《怪談》</div>
+<div class="c-trans">中：怪谈 · 英：Kwaidan: Stories and Studies of Strange Things (1904)</div>
+<div class="c-creator">小泉八云 Lafcadio Hearn（希腊裔爱尔兰人，归化日本）</div>
+<div class="c-desc">日本"怪谈文学"开山之作。八云在熊本教书三年，吸收了无数民间怪谈素材。其中〈耳无芳一〉〈雪女〉〈貉〉是标志性作品。你们要去的**小泉八雲熊本旧居**正是他在熊本的住处。</div>
+<div class="c-rec">行前挑 3-4 篇读，去旧居会更有感觉</div>
+</div>
+
+<div class="culture">
+<div class="c-type">电影 · Film</div>
+<div class="c-title">小林正樹《怪談》</div>
+<div class="c-trans">中：怪谈 · 英：Kwaidan (1964)</div>
+<div class="c-creator">导演：小林正樹 Masaki Kobayashi（黑泽明同时代大师之一）</div>
+<div class="c-desc">改编自小泉八云同名小说的 4 段式恐怖杰作。戛纳评审团特别奖+奥斯卡最佳外语片提名。美术设计是日本影史顶尖水平，所有场景都是搭出来的手工布景。</div>
+<div class="c-rec">电影爱好者必看</div>
+</div>
+
+<div class="culture">
+<div class="c-type">哲学/兵法 · Classic</div>
+<div class="c-title">宮本武蔵《五輪書》</div>
+<div class="c-trans">中：五轮书 · 英：The Book of Five Rings (1645)</div>
+<div class="c-creator">宫本武藏 Miyamoto Musashi</div>
+<div class="c-desc">武藏在熊本金峰山的**霊巌洞**洞穴里，闭关独处写成的一部兵法哲学书。分「地・水・火・风・空」五章，现在日本商学院都在读。你们可以去那个洞穴坐坐——洞大概 6 米见方，能感受到一个人在那里孤独思考的温度。</div>
+<div class="c-rec">中译本薄薄一本，1-2 小时能过完</div>
 </div>
 </div>
 
-<div class="day" id="day1">
-<h3>Day 1 · 4/30（周四）抵达与汇合 <span class="weather" data-date="2026-04-30" data-city="fukuoka">⏳ 福冈</span></h3>
-<span class="tag tag-eat">吃</span>
-<p>MM飞抵福冈，河马从日本其他城市来汇合。下午放好行李，傍晚出动。</p>
+<!-- 阿苏 & 鹿儿岛 -->
+<div class="read-watch">
+<h4>🌋 阿苏 · 鹿儿岛 · 电影《奇迹》</h4>
 
-<div class="meal m-breakfast"><div class="meal-label lb">早/午餐 · 各自在路上解决</div>
-<div class="detail">MM在飞机上吃航班餐；河马在路上的车站便当或便利店解决。到了酒店先休息。</div></div>
+<div class="culture">
+<div class="c-type">电影 · Film</div>
+<div class="c-title">是枝裕和《奇跡》</div>
+<div class="c-trans">中：奇迹 · 英：I Wish (2011)</div>
+<div class="c-creator">导演：是枝裕和 Hirokazu Kore-eda</div>
+<div class="c-desc"><strong>⭐ 这次行程最契合的一部电影！</strong>父母离婚后，哥哥跟妈妈住**鹿儿岛**（樱岛天天冒烟），弟弟跟爸爸住**福冈**。兄弟俩听说九州新干线开通那天，两列列车相会的瞬间会实现愿望，约好了去那条新干线的中途点——他们的行程就是你们这次日归路线（从一端到另一端）。电影里火山灰、鹿儿岛路面电车、福冈地铁、博多拉面全都出现过。</div>
+<div class="c-rec">Day 6 日归鹿儿岛前一晚一定要看！</div>
+</div>
 
-<div class="meal m-dinner" id="r-yatai"><div class="meal-label ld">晚餐 · 中洲屋台</div>
-<div class="name">中洲屋台群（那珂川沿い）</div>
-<div class="detail">第一顿就去河边的路边摊。选人少的摊位坐下，不用专门找名店。烤鸡皮（とり皮）是博多屋台灵魂。</div>
-<div class="hours">🕐 屋台多数 18:00-凌晨2:00 · 雨天可能不营业</div>
-<div class="price"><span class="yen">¥2,000-3,000/人</span><span class="rmb">（约 96-144 元/人）</span></div>
-<div class="who">🦛 烤鸡皮、烤五花肉 ｜ MM 可以加一碗拉面收尾</div></div>
+<div class="culture">
+<div class="c-type">电影 · Film</div>
+<div class="c-title">エドワード・ズウィック《ラストサムライ》</div>
+<div class="c-trans">中：最后的武士 · 英：The Last Samurai (2003)</div>
+<div class="c-creator">导演：Edward Zwick · 主演：Tom Cruise, 渡辺謙</div>
+<div class="c-desc">故事原型是鹿儿岛出身的**西郷隆盛**——明治维新三杰之一、最后的武士阶级反抗者，1877 年在鹿儿岛城山战死。电影虽然拍摄在新西兰，但精神土壤在鹿儿岛。去**仙巌園**能看到岛津家（西乡的主君）园林，去**樱岛**能看到西乡看过的同一座火山。</div>
+<div class="c-rec">若没看过值得一补</div>
+</div>
+
+<div class="culture">
+<div class="c-type">剧集 · TV Drama</div>
+<div class="c-title">NHK 大河ドラマ《西郷どん》</div>
+<div class="c-trans">中：西乡殿 · 英：Segodon (2018)</div>
+<div class="c-creator">鈴木亮平 主演</div>
+<div class="c-desc">NHK 50 集大河剧，西乡生平全记录，鹿儿岛全景拍摄。看过去鹿儿岛能认出很多地方。</div>
+<div class="c-rec">选集看几集即可</div>
+</div>
+</div>
+
+<!-- 宫崎骏 & 新海诚 -->
+<div class="read-watch">
+<h4>🌿 九州与日本动画大师</h4>
+
+<div class="culture">
+<div class="c-type">动画电影 · Anime</div>
+<div class="c-title">宮崎駿《もののけ姫》</div>
+<div class="c-trans">中：幽灵公主 · 英：Princess Mononoke (1997)</div>
+<div class="c-creator">导演：宫崎骏 Hayao Miyazaki · 吉卜力 Studio Ghibli</div>
+<div class="c-desc">电影里那片太古森林的视觉原型，是鹿儿岛外海的**屋久岛**——世界遗产，岛上有 7000 年以上的古杉。主美术尾田和男带着团队去屋久岛采风无数次。这次你们的行程不会去屋久岛（需要单独规划），但在鹿儿岛能看到它对岸的海线。</div>
+<div class="c-rec">🦛 应该已经看过的经典</div>
+</div>
+
+<div class="culture">
+<div class="c-type">动画电影 · Anime</div>
+<div class="c-title">新海誠《すずめの戸締まり》</div>
+<div class="c-trans">中：铃芽之旅 / 铃芽户缔 · 英：Suzume (2022)</div>
+<div class="c-creator">导演：新海诚 Makoto Shinkai</div>
+<div class="c-desc">整部电影的起点就在**九州**——女主铃芽在九州的乡下小镇发现一扇神秘的门，然后从九州一路向北穿越日本。开篇那片水淹的山间废墟景色很九州。</div>
+<div class="c-rec">轻松看</div>
+</div>
+
+<div class="culture">
+<div class="c-type">动漫 · Anime</div>
+<div class="c-title">緑川ゆき《夏目友人帳》</div>
+<div class="c-trans">中：夏目友人帐 · 英：Natsume's Book of Friends (2008- , 7季+剧场版)</div>
+<div class="c-creator">原作漫画：绿川幸 Yuki Midorikawa</div>
+<div class="c-desc">作者绿川幸是**熊本人吉**出身，整部作品的乡村风景——田埂、神社、木桥——都以人吉为原型。熊本本地爱好者都会来"圣地巡礼"。<strong>但 2020 年球磨洪水破坏了 JR 肥萨线南段，到 2033 年才能修好</strong>，现在去人吉只能坐 JR 到八代再换巴士，比较麻烦。</div>
+<div class="c-rec">🦛 如果是粉丝，Day 9 可以考虑这个日归</div>
+</div>
+</div>
+
+<!-- 柳川 -->
+<div class="read-watch">
+<h4>🚣 柳川 · 北原白秋的水乡</h4>
+
+<div class="culture">
+<div class="c-type">诗 · Poetry</div>
+<div class="c-title">北原白秋《思ひ出》</div>
+<div class="c-trans">中：思出（散文诗集）· 英：Memories (1911)</div>
+<div class="c-creator">北原白秋 Kitahara Hakushū（日本最著名童谣诗人之一）</div>
+<div class="c-desc">白秋出生在柳川。《この道》《からたちの花》等童谣日本人从小就会唱。他笔下的柳川水路、游船、渔女是全日本文学里最美的水乡意象之一。你们日归柳川坐的游船，就是他诗里的风景。</div>
+<div class="c-rec">可选阅，去了现场更有感觉</div>
+</div>
+</div>
+
+<div class="notice" style="background:#faf5ec;border-color:#b8895c"><strong>💡 观看/阅读优先级</strong>（时间有限就看重点）：<br>
+🥇 是枝裕和《奇迹》· 小林正树《怪谈》· 夏目漱石《二百十日》<br>
+🥈 小泉八云《怪谈》任选 3 篇 · 宫本武藏《五轮书》(薄)<br>
+🥉 其他按兴趣</div>
+</div>
+
+<!-- ==================== Day 1 抵达 ==================== -->
+<div class="sec" id="day1">
+<h2 class="sec-head">Day 1 · 4/30（周四）落地 · 福冈 → 熊本</h2>
+<div class="sec-date">4 月 30 日 抵达日 <span class="weather" data-date="2026-04-30" data-city="fukuoka">⏳ 加载中</span></div>
+<div class="sec-vibe">落地福冈机场，跟河马在福冈会合后一起坐新干线到熊本 Airbnb。下面按不同抵达时间给三种方案。</div>
+
+<div class="transport">
+<strong>🚇 福冈机场 → 博多站</strong> · 地铁空港线
+<div class="timetable">
+<div class="tt-head">空港→博多 全天运营</div>
+<div class="tt-row"><span class="tt-time">每 3-8 分钟一班</span><span class="tt-train">直达</span><span class="tt-dur">5 分钟</span></div>
+<div class="tt-note">营业：5:30-24:25 · 费用 <span class="yen">¥260</span><span class="rmb">（约 12.5 元）</span>· 国际/国内航站楼都可坐</div>
+</div>
+</div>
+
+<div class="transport">
+<strong>🚄 博多 → 熊本</strong> · 九州新干线（建议坐 Sakura，Mizuho 稍贵）
+<div class="timetable">
+<div class="tt-head">推荐班次（有座 / 可预约）</div>
+<div class="tt-row"><span class="tt-time">12:11</span><span class="tt-train">さくら553号</span><span class="tt-dur">→ 12:58</span></div>
+<div class="tt-row"><span class="tt-time">13:11</span><span class="tt-train">さくら555号</span><span class="tt-dur">→ 13:58</span></div>
+<div class="tt-row"><span class="tt-time">15:11</span><span class="tt-train">さくら559号</span><span class="tt-dur">→ 15:58</span></div>
+<div class="tt-row"><span class="tt-time">17:11</span><span class="tt-train">さくら563号</span><span class="tt-dur">→ 17:58</span></div>
+<div class="tt-row"><span class="tt-time">19:11</span><span class="tt-train">さくら567号</span><span class="tt-dur">→ 19:58</span></div>
+<div class="tt-row"><span class="tt-time">20:11</span><span class="tt-train">さくら569号</span><span class="tt-dur">→ 20:58</span></div>
+<div class="tt-last">末班（博多→熊本）：約 22:11 左右</div>
+<div class="tt-note">47 分钟 · 每 15-20 分钟一班 · 自由席 <span class="yen">¥5,130</span><span class="rmb">（约 246 元）</span>· 指定席稍贵</div>
+</div>
+</div>
+
+<h3 style="color:#5c6bc0;font-family:'Noto Serif SC',serif;margin:20px 0 10px;font-size:1.05rem">三种抵达方案</h3>
+
+<div class="arrival">
+<h4>A · 中午前到达（~11:00 前落地）</h4>
+<div class="arr-time">推荐：福冈吃顿午饭 + 少许逛街，下午去熊本</div>
+<ol>
+<li>福冈空港 → 博多站（地铁 5 分钟）</li>
+<li>博多站筑紫口「**Coin Locker**」存行李（大箱 ¥700/天，24h 可取）</li>
+<li>中午在博多站内或附近吃第一顿：<strong>「博多 1 番街」</strong>地下美食街有 10+ 家餐厅；或<strong>「元祖博多めんたい重」</strong>（明太子鳗鱼饭）；或直接博多拉面一碗</li>
+<li>可选：下午短暂看看栉田神社或博多旧市街（1-1.5 小时）</li>
+<li>~17:00 取行李，乘さくら 17:11/19:11 到熊本</li>
+<li>到熊本 Airbnb check in，晚餐吃马肉/赤牛</li>
+</ol>
+</div>
+
+<div class="arrival">
+<h4>B · 下午到达（16:00-18:00 落地）</h4>
+<div class="arr-time">推荐：在福冈机场/博多站快速吃一碗面，直接去熊本</div>
+<ol>
+<li>落地后直接在机场或博多站内解决一顿拉面（博多拉面店几乎全天都有）</li>
+<li>乘新干线直接到熊本（19:11 或 20:11 的さくら）</li>
+<li>到熊本后 check in Airbnb，晚餐可以简单（附近便利店或夜里的一碗熊本拉面）</li>
+</ol>
+</div>
+
+<div class="arrival">
+<h4>C · 晚上到达（20:00 后落地）</h4>
+<div class="arr-time">推荐：直接去熊本，晚餐便利店解决</div>
+<ol>
+<li>落地走完海关通关 → 博多站 → 末班新干线到熊本</li>
+<li><strong>注意：末班さくら大约 22:11 从博多发车</strong>，所以若预计 21:30 还没到博多，需要考虑在福冈过一晚（机场附近有连锁胶囊酒店 ¥4,000-6,000）</li>
+<li>到熊本后便利店买点喝的吃的回 Airbnb 休息</li>
+</ol>
+</div>
+
+<div class="notice"><strong>🛅 行李寄存点对比：</strong><br>
+· <strong>福冈机场 Coin Locker</strong>：国内/国际航站楼各层都有，¥400-700/天。适合时间短的旅客<br>
+· <strong>博多站 Coin Locker</strong>：筑紫口+中央口共 3000+ 个，¥300-700/天。适合在博多附近活动<br>
+· <strong>熊本到了再存</strong>：如果不想在福冈逛，直接坐新干线，到熊本 Airbnb 再 drop 行李
+</div>
+
+<div class="meal m-dinner" id="r-suganoya"><div class="meal-label ld">晚餐 · 熊本马肉</div>
+<div class="name">菅乃屋 熊本駅店（Suganoya）</div>
+<div class="detail">熊本最有名的马肉专门店，自家养马。<strong>原上通店已永久停业</strong>，现在去熊本站店（一出新干线站就在）。建议提前让 Airbnb 房东或旅行社帮忙预约（电话：096-352-0529）。</div>
+<div class="hours">🕐 11:30-15:00、17:00-22:00（最后点餐 21:00）</div>
+<div class="price"><span class="yen">¥3,500-5,000/人</span><span class="rmb">（约 168-240 元/人）</span></div>
+<div class="who">🦛 点「馬肉のハリハリ鍋」涮马肉火锅 或「馬肉ステーキ」煎马排 ｜ 🧑 可以试生马肉刺身（馬刺し）</div></div>
 
 <details class="more"><summary>想多玩一点？</summary><div class="more-list">
-· 中洲的夜景可以走到春吉桥上看，两岸霓虹灯倒映在河面上<br>
-· 天神地下街晚上9点前还开着，可以逛逛
+· 到 Airbnb 放好行李后，附近便利店（Lawson / Family Mart）买点饮料、乳酪、明日的早餐食材<br>
+· 熊本的「熊本城夜间点灯」免费看（离熊本站步行 15 分钟 + 市电 10 分钟）<br>
+· 若精力还行，可以上通/下通商店街走一圈感受一下熊本晚上
 </div></details>
 </div>
 
-<div class="day" id="day2">
-<h3>Day 2 · 5/1（周五）博多老城区 <span class="weather" data-date="2026-05-01" data-city="fukuoka">⏳ 福冈</span></h3>
-<span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
-
-<div class="meal m-breakfast"><div class="meal-label lb">早餐 · 酒店附近或博多站</div>
-<div class="detail">睡到自然醒。博多站内多家咖啡店有morning set。</div>
-<div class="price"><span class="yen">¥600-800</span><span class="rmb">（约 29-38 元）</span></div></div>
-
-<p>下午去<strong>博多旧市街</strong>散步——承天寺、栉田神社（<a href="javascript:void(0)" onclick="focusMarker('s-kushida','fukuoka')">📍</a>），这一带很安静。</p>
-
-<div class="meal m-lunch" id="r-uron"><div class="meal-label ll">午餐 · 博多乌冬</div>
-<div class="name">かろのうろん（博多祇園）</div>
-<div class="detail">博多最老的乌冬店（1882年），柔软的博多式乌冬配牛肉或肉天妇罗。<strong>注意：卖完就关门</strong>，建议11点开门去或14点后去。</div>
-<div class="hours hours-warn">🕐 周三-周一 11:00-19:00 · <strong>周二定休</strong>（遇假日顺延）</div>
-<div class="price"><span class="yen">¥800-1,000</span><span class="rmb">（约 38-48 元）</span></div>
-<div class="who">🦛 点肉乌冬（肉うどん）</div></div>
-
-<div class="meal m-dinner" id="r-motsunabe"><div class="meal-label ld">晚餐 · 牛杂锅</div>
-<div class="name">もつ鍋 一藤（博多店）</div>
-<div class="detail">三种锅底（味噌、酱油、水炊き）。最后加チャンポン麺吸完汤汁。距博多站步行3分钟。<strong>一定要预约</strong>。</div>
-<div class="hours">🕐 周日-周四 17:00-23:00 · 周五/六 17:00-23:30 · 只开晚市</div>
-<div class="price"><span class="yen">¥3,500/人含酒水</span><span class="rmb">（约 168 元/人）</span></div>
-<div class="who">🦛🧑 两人都会爱。纯肉的锅。</div></div>
-</div>
-
-<div class="day" id="day3">
-<h3>Day 3 · 5/2（周六）天神 · 大名小巷 <span class="weather" data-date="2026-05-02" data-city="fukuoka">⏳ 福冈</span></h3>
-<span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
-
-<div class="meal m-breakfast" id="r-rec"><div class="meal-label lb">早餐 · 大名区咖啡店</div>
-<div class="name">REC COFFEE 薬院駅前店</div>
-<div class="detail">福冈本土精品咖啡品牌，拿铁很好。</div>
-<div class="hours">🕐 周一-四 8:00-24:00 · 周五 8:00-次日01:00 · 周六 10:00-次日01:00 · 周日 10:00-24:00 · 全年无休</div>
-<div class="price"><span class="yen">¥800-1,000</span><span class="rmb">（约 38-48 元）</span></div></div>
-
-<p>下午在大名地区漫无目的地走——独立咖啡店、古着店、小画廊挤在居民区巷子里。</p>
-
-<div class="meal m-lunch" id="r-shinshin"><div class="meal-label ll">午餐 · 拉面</div>
-<div class="name">ShinShin 天神本店</div>
-<div class="detail">当地人的拉面选择，纯博多豚骨但比一般的清爽一些。高峰期可能排队45分钟-1小时。</div>
-<div class="hours hours-warn">🕐 周四-周二 11:00-次日03:00 · 17:00后兼做居酒屋 · <strong>周三定休</strong></div>
-<div class="price"><span class="yen">¥850</span><span class="rmb">（约 41 元）</span></div></div>
-
-<div class="meal m-dinner" id="r-kawaya"><div class="meal-label ld">晚餐 · 鸡皮串 + 居酒屋</div>
-<div class="name">博多かわ屋（祇園店推荐）</div>
-<div class="detail">鸡皮反复卷紧、烤制冷藏，重复七天才上桌。<strong>建议去博多祇園店（更近博多站，已确认营业）</strong>。</div>
-<div class="hours">🕐 祇園店 17:00-24:00（最后点单 23:30）· 不定期休</div>
-<div class="price"><span class="yen">¥3,000-4,000/人</span><span class="rmb">（约 144-192 元/人）</span></div>
-<div class="who">🦛 推荐指数 ★★★★★ ｜ 必点鸡皮串</div></div>
-</div>
-
-<div class="day" id="day4">
-<h3>Day 4 · 5/3（周日）糸岛半日 <span class="weather" data-date="2026-05-03" data-city="fukuoka">⏳ 糸岛</span></h3>
-<span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
-
-<div class="transport">
-<strong>🚃 博多 → 糸岛</strong> · JR筑肥线，约40分钟。
-<div class="time-box"><strong>建议班次：</strong>10:30-11:30出发。糸岛景点分散，建议租自行车或打车。</div>
-</div>
-
-<div class="meal m-lunch" id="r-tsukamoto"><div class="meal-label ll">午餐 · 糸岛海边</div>
-<div class="name">塚本鮮魚店（Tsukamoto Sengyo-ten）</div>
-<div class="detail">糸岛海鲜料理名店。有寿司和海鲜定食，也有烤鱼等熟食选项给河马。</div>
-<div class="hours">🕐 平日 11:00-14:15、17:00-21:00 · 周末 8:00-10:00、11:00-21:00 · 无定休</div>
-<div class="price"><span class="yen">¥1,200-1,800</span><span class="rmb">（约 58-86 元）</span></div>
-<div class="who">🦛 烤鱼定食或海鲜锅 ｜ 🧑 可以尝刺身</div></div>
-
-<div class="meal m-dinner" id="r-mizutaki"><div class="meal-label ld">晚餐 · 福冈最后的大餐</div>
-<div class="name">水炊き 長野（博多）</div>
-<div class="detail">博多灵魂料理——水炊き（鸡肉白汤锅）。整只鸡熬出的浓白汤底。<strong>强烈建议提前预约</strong>。</div>
-<div class="hours hours-warn">🕐 12:00-22:00（最后入店 20:30）· <strong>周日定休</strong></div>
-<div class="price"><span class="yen">¥4,000-5,000/人</span><span class="rmb">（约 192-240 元/人）</span></div>
-<div class="who">🦛 纯鸡肉锅！全程没有生的</div></div>
-</div>
-
-</div>
-
-<!-- ==================== 熊本 ==================== -->
+<!-- ==================== 熊本 9 晚 ==================== -->
 <div class="sec" id="kumamoto">
-<h2 class="sec-head">熊本</h2>
-<div class="sec-date">5/4（周一）— 5/8（周五）· 5晚</div>
-<div class="sec-vibe">5 晚的深度基地。市内 1 天慢慢逛，2 个核心日归（阿苏+鹿儿岛），1 个灵活日。</div>
+<h2 class="sec-head">熊本 · 9 晚的"家"</h2>
+<div class="sec-date">5/1（周五）— 5/9（周六·上午 check out）· 住 Airbnb</div>
+<div class="sec-vibe">9 晚在一个 Airbnb 意味着这次旅行有一半时间你们是在"生活"而不是"赶路"。日归 3 个核心目的地（福冈·阿苏·鹿儿岛），加几个灵活日，加深度的熊本本地体验。</div>
 
 <div class="map-wrap">
 <div id="map-kumamoto" class="sec-map"></div>
@@ -353,222 +479,438 @@ a:hover{text-decoration:underline}
 <div class="lg city">熊本市</div>
 <div class="lg daytrip">核心日归</div>
 <div class="lg flex">灵活日归</div>
+<div class="lg culture">文化地标</div>
 </div>
 </div>
-<div class="sec-map-caption">🔴 K 熊本（基地）· 🔵 阿苏、鹿儿岛（核心日归）· 🟣 山鹿/人吉/岛原/柳川/天草（灵活日归）· 点击标记跳转详情</div>
+<div class="sec-map-caption">🔴 熊本基地 · 🔵 核心日归（福冈/阿苏/鹿儿岛）· 🟣 灵活日归 · 🟫 熊本文化地标</div>
 
-<div class="hotels">
-<h4>🏨 住宿推荐 · 建议 7 晚都住同一家（省去搬行李）</h4>
-<div class="hotel" id="h-km-daiwa">
-<div class="h-name">ダイワロイネットホテル熊本（Daiwa Roynet Hotel Kumamoto）</div>
-<div class="h-price"><span class="yen">约 ¥11,000-14,000日元/晚</span><span class="rmb">（约 528-672 元/晚）</span></div>
-<div class="h-note">下通商店街旁，逛街吃饭都方便。<strong>Akaushi Dining yoka-yoka 赤牛餐厅就在2楼</strong>——7天里随时能吃到。</div>
-<div class="h-times">🕒 入住 14:00 · 退房 11:00</div>
-<div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Daiwa+Roynet+Hotel+Kumamoto" target="_blank">📍 Google Maps</a></div>
-</div>
-<div class="hotel" id="h-km-tokyu">
-<div class="h-name">熊本東急REIホテル（Kumamoto Tokyu REI Hotel）</div>
-<div class="h-price"><span class="yen">约 ¥10,000-13,000日元/晚</span><span class="rmb">（约 480-624 元/晚）</span></div>
-<div class="h-note">紧邻市电站，去熊本城和水前寺都方便。7天连住通常有优惠。</div>
-<div class="h-times">🕒 入住 15:00 · 退房 10:00</div>
-<div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Kumamoto+Tokyu+REI+Hotel" target="_blank">📍 Google Maps</a></div>
-</div>
-<div class="hotel" id="h-km-comfort">
-<div class="h-name">コンフォートホテル熊本新市街（Comfort Hotel Kumamoto Shinshigai）</div>
-<div class="h-price"><span class="yen">约 ¥8,000-11,000日元/晚</span><span class="rmb">（约 384-528 元/晚）</span></div>
-<div class="h-note">性价比最好，含免费早餐。位于新市街中心，楼下就是商店街。</div>
-<div class="h-times">🕒 入住 15:00 · 退房 10:00</div>
-<div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Comfort+Hotel+Kumamoto+Shinshigai" target="_blank">📍 Google Maps</a></div>
-</div>
-
-<div class="airbnb">
-<div class="airbnb-title">🏠 强烈推荐 Airbnb（5 晚连住超划算）</div>
-<div class="airbnb-desc">熊本住 5 晚是 Airbnb 的甜蜜区——很多房东 5 晚以上有折扣（10-20% off）。整套公寓 <span class="yen">¥6,000-10,000/晚</span>（约 288-480 元），加上有厨房可以买当地食材自己做（晚归回来煮个泡面也方便），跟商务酒店比能省不少。</div>
-<div class="airbnb-area"><strong>推荐区域：</strong>下通/上通商店街周边（吃喝最方便）· 通町筋市电站附近（市内交通中心）· 熊本駅周边（出发日归阿苏/鹿儿岛最方便）</div>
-<div class="airbnb-area"><strong>筛选建议：</strong>整套公寓 · 1-2 室 · 离市电站 5 分钟内 · 有 Wifi · 5+ 晚优惠 · "Superhost"</div>
-<a class="airbnb-link" href="https://www.airbnb.com/s/Kumamoto--Kumamoto-Prefecture--Japan/homes?adults=2&checkin=2026-05-04&checkout=2026-05-09&room_types%5B%5D=Entire%20home%2Fapt" target="_blank">🔗 Airbnb 上搜熊本 5/4-5/9</a>
-</div>
-</div>
-
-<div class="day" id="day5">
-<h3>Day 5 · 5/4（周一·振替休日）福冈 → 熊本 <span class="weather" data-date="2026-05-04" data-city="kumamoto">⏳ 熊本</span></h3>
-<span class="tag tag-train">火车</span><span class="tag tag-eat">吃</span>
-
-<div class="transport">
-<strong>🚄 福冈 → 熊本</strong> · 九州新干线「さくら」或「つばめ」。
-<div class="time-box"><strong>建议班次：</strong>博多 11:45 → 熊本 12:36（さくら559号）· 自由席 <span class="yen">¥5,130日元</span><span class="rmb">（约 246 元/人）</span>· 行程 45 分钟</div>
-<div class="backup">📋 备选：高速巴士「ひのくに号」约 2 小时，¥2,500/人（约 120 元）</div>
-</div>
-
-<div class="meal m-lunch"><div class="meal-label ll">午餐 · 火车便当</div>
-<div class="detail">博多站买駅弁在新干线上吃，45分钟刚好吃完。「博多地鶏弁当」和「九州味めぐり弁当」都不错。</div>
-<div class="price"><span class="yen">¥1,000-1,300</span><span class="rmb">（约 48-62 元）</span></div></div>
-
-<p>下午到达熊本，check in 后去<strong>熊本城</strong>周边散步。然后走到上通·下通商店街。</p>
-
-<div class="meal m-dinner" id="r-suganoya"><div class="meal-label ld">晚餐 · 马肉料理</div>
-<div class="name">菅乃屋 熊本駅店（Suganoya）</div>
-<div class="detail">熊本最有名的马肉专门店，自家养马。<strong>原上通店已停业</strong>，现去熊本站店。建议提前预约（让酒店前台帮忙）。电话：096-352-0529。</div>
-<div class="hours">🕐 11:30-15:00、17:00-22:00</div>
-<div class="price"><span class="yen">¥3,500-5,000/人</span><span class="rmb">（约 168-240 元/人）</span></div>
-<div class="who">🦛 馬肉のハリハリ鍋 或 馬肉ステーキ ｜ 🧑 试生马肉刺身</div></div>
-</div>
-
-<div class="day" id="day6">
-<h3>Day 6 · 5/5（周二·儿童节）熊本市内深度日 <span class="weather" data-date="2026-05-05" data-city="kumamoto">⏳ 熊本</span></h3>
+<!-- Day 2 -->
+<div class="day" id="day2">
+<h3>Day 2 · 5/1（周五）熊本市内 · 水前寺 · 赤牛 <span class="weather" data-date="2026-05-01" data-city="kumamoto">⏳ 熊本</span></h3>
 <span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
 
-<p>上午去<strong>水前寺成趣园</strong>——日式庭园，走一圈20分钟。</p>
+<p>第一个完整的一天。早上睡到自然醒，上午慢慢在 Airbnb 附近吃早餐、去商店街逛逛熊悠闲入门。</p>
+
+<p>下午去<strong>水前寺成趣园</strong>——江户初期细川家造的名庭园（1630 年代），微缩了东海道五十三次的风景，小而精致，走一圈 20 分钟。旁边的<strong>出水神社</strong>里<strong>有夏目漱石俳句碑</strong>（漱石来熊本后常去这里）。</p>
 
 <div class="meal m-lunch" id="r-yokayoka"><div class="meal-label ll">午餐 · 赤牛！</div>
 <div class="name">Akaushi Dining yoka-yoka（ダイワロイネット 2F）</div>
-<div class="detail">专做熊本赤牛（褐毛和牛）。午餐套餐比晚餐划算。<strong>住 Daiwa Roynet 的话就在酒店2楼</strong>。</div>
-<div class="hours">🕐 早 6:30-10:00 · 午 11:00-16:00 · 晚 16:00-22:00 · 全年无休</div>
+<div class="detail">专做熊本赤牛（褐毛和牛）。赤牛肉味浓、脂肪少、不腻，比一般和牛更适合爱吃肉的人。<strong>午餐套餐比晚餐划算很多</strong>。</div>
+<div class="hours">🕐 早餐 6:30-10:00 · 午餐 11:00-16:00 · 晚餐 16:00-22:00 · 全年无休</div>
 <div class="price"><span class="yen">午餐套餐 ¥1,800-2,500</span><span class="rmb">（约 86-120 元）</span></div>
 <div class="who">🦛 推荐指数 ★★★★★ · 红肉爱好者的理想型</div></div>
 
-<div class="meal m-dinner" id="r-kokutei"><div class="meal-label ld">晚餐 · 熊本拉面</div>
+<div class="meal m-tea" id="cafe-orange"><div class="meal-label lt">下午茶 · 橙書店 Orange Books</div>
+<div class="name">橙書店（Daidai Shoten · Orange Books）</div>
+<div class="detail">熊本最有名的独立书店+咖啡馆，<strong>村上春树曾在这里做过秘密朗读会</strong>。精选约 4000 册书（小说/散文/诗歌/摄影/艺术），兼美术馆展区。坐在二楼翻书喝咖啡可以耗一下午。</div>
+<div class="hours hours-warn">🕐 12:00-19:00（周日及节日 12:00-17:00）· <strong>周二+每月第3个周一定休</strong></div>
+<div class="price"><span class="yen">¥700-1,200</span><span class="rmb">（约 34-58 元）</span></div></div>
+
+<div class="meal m-dinner"><div class="meal-label ld">晚餐 · 熊本拉面</div>
 <div class="name">黒亭ラーメン（本店 或 桜町店）</div>
-<div class="detail">熊本拉面代表，比博多的更浓、加蒜油和黑芝麻。本店在二本木，桜町店离酒店区域更近。</div>
-<div class="hours hours-warn">🕐 本店 10:30-20:30 · 桜町店 11:00-22:00 · <strong>每月第3个周四定休</strong></div>
+<div class="detail">熊本拉面代表（比博多的更浓、加蒜油和黑芝麻）。本店在二本木稍远，桜町店离市中心更近。</div>
+<div class="hours hours-warn">🕐 本店 10:30-20:30 · 桜町店 11:00-22:00 · <strong>每月第 3 个周四定休</strong></div>
 <div class="price"><span class="yen">¥800-1,200</span><span class="rmb">（约 38-58 元）</span></div></div>
+
+<details class="more"><summary>想多玩一点？</summary><div class="more-list">
+· 熊本城夜间点灯时从二の丸広場看过去很壮观（免费）<br>
+· 下通商店街「鶴屋百貨店」地下食品层可以买各种熊本特产试吃<br>
+· 「森からし蓮根本舗」买芥末莲藕当手信（熊本名物）
+</div></details>
 </div>
 
-<div class="day" id="day7">
-<h3>Day 7 · 5/6（周三·黄金周末日）🌋 日归阿苏 <span class="weather" data-date="2026-05-06" data-city="aso">⏳ 阿苏</span></h3>
-<span class="tag tag-daytrip">日归</span><span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span>
+<!-- Day 3 -->
+<div class="day" id="day3">
+<h3>Day 3 · 5/2（周六）🍜 日归福冈 · 美食日 <span class="weather" data-date="2026-05-02" data-city="fukuoka">⏳ 福冈</span></h3>
+<span class="tag tag-daytrip">日归</span><span class="tag tag-eat">吃</span>
 
-<div class="daytrip-banner"><strong>🚂 核心日归 #1</strong>。黄金周最后一天，阿苏可能稍多人但比城市好得多。行李留在熊本酒店，轻装一日。</div>
+<div class="daytrip-banner"><strong>🍜 核心日归 #1 · 美食日</strong><br>把原来计划里福冈的精华餐厅一天打包吃完。早上新干线过去，午+下+晚吃三顿，末班车回熊本。</div>
 
 <div class="transport">
-<strong>🚂 熊本 → 阿苏</strong> · JR豊肥本線 特急「あそ」。
-<div class="time-box"><strong>建议班次：</strong>熊本 9:11 → 阿蘇 10:39（特急あそ1号）· <span class="yen">¥2,500/人单程</span><span class="rmb">（约 120 元）</span><br>
-<strong>回程：</strong>阿蘇 17:07 → 熊本 18:27</div>
-<div class="backup">📋 备选：观光列车「あそぼーい！」5/6周三较少运行</div>
+<strong>🚄 熊本 → 博多 · 上午去</strong>
+<div class="timetable">
+<div class="tt-head">推荐上午班次</div>
+<div class="tt-row"><span class="tt-time">9:07</span><span class="tt-train">さくら402号</span><span class="tt-dur">→ 9:48</span></div>
+<div class="tt-row"><span class="tt-time">10:07</span><span class="tt-train">さくら404号</span><span class="tt-dur">→ 10:48</span></div>
+<div class="tt-row"><span class="tt-time">11:07</span><span class="tt-train">さくら406号</span><span class="tt-dur">→ 11:48</span></div>
+<div class="tt-note">47 分钟 · 自由席 <span class="yen">¥5,130/人</span>（约 246 元）· 若用 JR Pass 覆盖这天，可订指定席</div>
+</div>
 </div>
 
-<div class="meal m-lunch" id="dt-aso"><div class="meal-label ll">午餐 · 阿苏赤牛炸牛排</div>
+<div class="meal m-lunch" id="r-uron"><div class="meal-label ll">午餐 · 博多乌冬</div>
+<div class="name">かろのうろん（博多祇園）</div>
+<div class="detail">博多最老的乌冬店（1882年）。柔软的博多式乌冬配牛肉或肉天妇罗。<strong>卖完就关门</strong>，建议 12:00 前到。在栉田神社旁边。</div>
+<div class="hours hours-warn">🕐 周三-周一 11:00-19:00 · <strong>周二定休</strong></div>
+<div class="price"><span class="yen">¥800-1,000</span><span class="rmb">（约 38-48 元）</span></div>
+<div class="who">🦛 点肉乌冬（肉うどん）｜ MM 各种口味都可以尝</div></div>
+
+<p>午饭后去<strong>博多旧市街</strong>散步（承天寺、栉田神社），约 1.5 小时。然后中洲、天神、大名可以再逛一阵。推荐在天神的 <strong>REC COFFEE 薬院駅前店</strong>（福冈本土精品咖啡）喝一杯缓冲。</p>
+
+<div class="meal m-dinner" id="r-motsunabe"><div class="meal-label ld">晚餐 第一轮 · 牛杂锅</div>
+<div class="name">もつ鍋 一藤（博多店）</div>
+<div class="detail">博多灵魂料理之一。三种锅底（味噌/酱油/水炊き），牛小肠煮到软烂。<strong>提前预约</strong>。距博多站步行 3 分钟。</div>
+<div class="hours">🕐 周日-周四 17:00-23:00 · 周五/六 17:00-23:30 · 只开晚市</div>
+<div class="price"><span class="yen">¥3,500/人含酒水</span><span class="rmb">（约 168 元/人）</span></div>
+<div class="who">🦛🧑 两人都会爱。纯肉的锅。</div></div>
+
+<div class="meal m-dinner"><div class="meal-label ld">晚餐 第二轮（可选）· 中洲屋台</div>
+<div class="name">中洲屋台群（那珂川沿い）</div>
+<div class="detail">如果牛杂锅没吃饱，走去中洲河边屋台再喝一杯。烤鸡皮（とり皮）是博多屋台灵魂。<strong>周六夜晚屋台最热闹</strong>。</div>
+<div class="hours">🕐 18:00-凌晨 2:00（雨天可能不营业）</div>
+<div class="price"><span class="yen">¥1,000-2,000/人</span><span class="rmb">（约 48-96 元/人）</span></div></div>
+
+<div class="transport tt-return">
+<strong>🚄 博多 → 熊本 · 夜里回</strong>
+<div class="timetable tt-return">
+<div class="tt-head">晚间返程班次</div>
+<div class="tt-row"><span class="tt-time">20:11</span><span class="tt-train">さくら569号</span><span class="tt-dur">→ 20:58</span></div>
+<div class="tt-row"><span class="tt-time">21:11</span><span class="tt-train">さくら571号</span><span class="tt-dur">→ 21:58</span></div>
+<div class="tt-row"><span class="tt-time">22:11</span><span class="tt-train">さくら573号</span><span class="tt-dur">→ 22:58</span></div>
+<div class="tt-last">⚠️ 末班大约 22:11 · 一定要赶上</div>
+</div>
+</div>
+
+<details class="more"><summary>想多玩一点？</summary><div class="more-list">
+· 水炊き 長野（鸡肉白汤锅）——若中午没安排乌冬，午餐来这里（12:00-22:00，<strong>周日定休</strong>，5/2 周六可以）<br>
+· 博多 かわ屋 祇園店——鸡皮串名店（17:00 开始），若晚上还有胃口再加这一家<br>
+· 博多运河城拉面竞技场：8 家不同风格拉面同场<br>
+· 福冈塔登顶看海景
+</div></details>
+</div>
+
+<!-- Day 4 阿苏 -->
+<div class="day" id="day4">
+<h3>Day 4 · 5/3（周日）🌋 日归阿苏 <span class="weather" data-date="2026-05-03" data-city="aso">⏳ 阿苏</span></h3>
+<span class="tag tag-daytrip">日归</span><span class="tag tag-culture">文化</span><span class="tag tag-eat">吃</span>
+
+<div class="daytrip-banner"><strong>🌋 核心日归 #2</strong>。夏目漱石《二百十日》里那两个角色爬的就是这座山。</div>
+
+<div class="culture" style="margin:14px 0">
+<div class="c-type">行前必读（如果还没读）</div>
+<div class="c-title">夏目漱石《二百十日》Two Hundred and Tenth Day</div>
+<div class="c-desc">来之前看过这本书，你们在草千里和大观峰的时候，会自动想起漱石和山川遇台风的段落。电子书中文版可在微信读书找到，短篇，一小时读完。</div>
+</div>
+
+<div class="transport">
+<strong>🚂 熊本 → 阿苏</strong> · JR豊肥本線「特急あそ」
+<div class="timetable">
+<div class="tt-head">上午班次（3 班/天，很少）</div>
+<div class="tt-row"><span class="tt-time">8:25</span><span class="tt-train">特急あそ1号</span><span class="tt-dur">→ 9:52</span></div>
+<div class="tt-row"><span class="tt-time">11:51</span><span class="tt-train">特急あそ3号</span><span class="tt-dur">→ 13:18</span></div>
+<div class="tt-row"><span class="tt-time">15:23</span><span class="tt-train">特急あそ5号</span><span class="tt-dur">→ 16:50</span></div>
+<div class="tt-note">87 分钟 · <span class="yen">¥2,500 自由席/¥3,000 指定席</span>（约 120-144 元）· <strong>班次极少 · 节假日一定要提前订</strong></div>
+</div>
+</div>
+
+<div class="meal m-lunch" id="r-hanabishi"><div class="meal-label ll">午餐 · 赤牛炸牛排</div>
 <div class="name">阿蘇はなびし</div>
-<div class="detail">阿苏神社参道旁的赤牛炸牛排（あか牛カツ）专门店，古民家建筑。<strong>只开午市</strong>。</div>
+<div class="detail">阿苏神社参道旁，古民家建筑里的赤牛炸牛排（あか牛カツ）专门店。阿苏眼前草原放牧的赤牛。</div>
 <div class="hours hours-warn">🕐 11:00-16:00 · 只营业午餐</div>
 <div class="price"><span class="yen">¥1,500-2,000</span><span class="rmb">（约 72-96 元）</span></div>
 <div class="who">🦛 炸牛排！不用任何犹豫</div></div>
 
-<p>下午打车或租车去<strong>草千里</strong>和<strong>大观峰</strong>。傍晚坐特急回熊本。</p>
+<p>下午租车或打车去<strong>草千里</strong>（巨大高原草地，完全不需要体力）+ <strong>大观峰展望台</strong>（俯瞰整个火山口盆地，"涅槃像"）。</p>
+
+<div class="transport tt-return">
+<strong>🚂 阿苏 → 熊本 · 返程</strong>
+<div class="timetable tt-return">
+<div class="tt-head">下午/傍晚班次</div>
+<div class="tt-row"><span class="tt-time">13:55</span><span class="tt-train">特急あそ2号</span><span class="tt-dur">→ 15:22</span></div>
+<div class="tt-row"><span class="tt-time">17:00</span><span class="tt-train">特急あそ4号</span><span class="tt-dur">→ 18:27</span></div>
+<div class="tt-last">⚠️ 末班大约 18:27 · 务必赶上！</div>
+</div>
 </div>
 
-<div class="day" id="day8">
-<h3>Day 8 · 5/7（周四）🐗 日归鹿儿岛 <span class="weather" data-date="2026-05-07" data-city="kagoshima">⏳ 鹿儿岛</span></h3>
-<span class="tag tag-daytrip">日归</span><span class="tag tag-train">火车</span><span class="tag tag-eat">吃</span>
+<details class="more"><summary>想多玩一点？</summary><div class="more-list">
+· 阿苏神社参道「とり宮」炸コロッケ（可乐饼）是当地名物小吃<br>
+· ニュー草千里 2 楼食堂（11:00-15:00，最后点餐 14:00）窗外就是草原，喝杯咖啡拍照<br>
+· 阿苏中岳火山口有时对游客开放（取决当天火山活动），坐车到山顶看冒烟的火山口
+</div></details>
+</div>
 
-<div class="daytrip-banner"><strong>🚅 核心日归 #2</strong>。九州新干线只要 45 分钟就到。</div>
+<!-- Day 5 休息咖啡店日 -->
+<div class="day" id="day5">
+<h3>Day 5 · 5/4（周一·振替休日）☕ 熊本 · 咖啡店慢日 <span class="weather" data-date="2026-05-04" data-city="kumamoto">⏳ 熊本</span></h3>
+<span class="tag tag-walk">逛</span><span class="tag tag-eat">吃</span><span class="tag tag-rest">慢</span>
+
+<p>前两天日归奔波，今天纯粹休息。熊本有超多独立咖啡店，下面挑了几家可以坐着聊很久的。排一个"咖啡店三连"或者单挑一家泡一下午。</p>
+
+<div class="cafe" id="cafe-nakagawa">
+<div class="cf-name">珈琲中川（Coffee Nakagawa）<span class="cf-type">1976 老喫茶店</span></div>
+<div class="cf-addr">📍 中央区手取本町5-21 キクタビル地下1階（下通核心地段）</div>
+<div class="cf-note">地下室开在 1976 年的纯喫茶（純喫茶）。红皮沙发 + 木头墙板 + 50 年光阴。手冲功力深厚。<strong>周六 24 小时营业</strong>，周五 6:30-次日 2:00，如果熬夜聊天可以在这里蹲到深夜。9pm 后加收 10% 夜费。</div>
+<div class="cf-hours">🕐 平日 6:30-2:00 · 周六 24h · 周日-20:00 · 全年无休</div>
+</div>
+
+<div class="cafe" id="cafe-kairo">
+<div class="cf-name">珈琲回廊（Coffee Gallery）<span class="cf-type">120 年町家</span></div>
+<div class="cf-addr">📍 中央区西唐人町20（古町历史街区）</div>
+<div class="cf-note">120 年的鲣节商仓库改造。木梁 + 白墙 + 极简家具。自家烘焙，11 个国家的豆子。二楼安静，做读书/写日记/深谈最合适。一楼有画廊。</div>
+<div class="cf-hours">🕐 10:00-19:00</div>
+</div>
+
+<div class="cafe" id="cafe-gluck">
+<div class="cf-name">Gluck Coffee Spot<span class="cf-type">古民家 + 甜品</span></div>
+<div class="cf-addr">📍 中央区城东町5-52（熊本城附近）</div>
+<div class="cf-note">另一家古民家改造咖啡馆。<strong>甜品很强</strong>——抹茶乳酪、咖啡布丁、香蕉面包。楼下 counter、楼上桌位，氛围柔和。</div>
+<div class="cf-hours">🕐 平日 11:00-19:00 · 周末 10:00-19:00</div>
+</div>
+
+<div class="cafe" id="cafe-and">
+<div class="cf-name">And Coffee Roasters<span class="cf-type">第三波精品</span></div>
+<div class="cf-addr">📍 上通町11-22（上通商店街内）</div>
+<div class="cf-note">小型单品豆焙煎所，自家烘焙。手冲和意式都很强。极简设计，适合拍照+短坐。早 8 点开，早餐咖啡也行。</div>
+<div class="cf-hours">🕐 8:00-20:00</div>
+</div>
+
+<div class="cafe" id="cafe-omoken">
+<div class="cf-name">Omoken Park<span class="cf-type">花园咖啡</span></div>
+<div class="cf-addr">📍 中央区上通町7-7-1</div>
+<div class="cf-note">熊本地震后建在重建土地上的"社会设计公园"。花园里有小屋咖啡馆，有一口井可以摸到熊本地下泉水。开心果磅蛋糕+拿铁是招牌。独特氛围。</div>
+<div class="cf-hours hours-warn">🕐 11:00-18:00（周五/周六 -19:00）· <strong>周二定休</strong></div>
+</div>
+
+<div class="cafe" id="cafe-switch">
+<div class="cf-name">Cafe Switch<span class="cf-type">晚间安静</span></div>
+<div class="cf-addr">📍 上通町1-24（上通内）</div>
+<div class="cf-note">傍晚和晚上来这里。拿铁拉花好，阿芙佳朵（affogato）是招牌。音乐选得好。</div>
+<div class="cf-hours">🕐 10:30-21:00（周五六 -22:00 · 周日一 -20:00）</div>
+</div>
+
+<h4 style="margin:20px 0 10px;color:#3a3631;font-family:'Noto Serif SC',serif;font-size:1rem">🛍️ 顺路的 Vintage 小店</h4>
+
+<div class="cafe" id="shop-jam">
+<div class="cf-name">古着屋 JAM 熊本店<span class="cf-type">Vintage · 美式</span></div>
+<div class="cf-addr">📍 中央区城东町2-18 通町ビル1-2F（新市街）</div>
+<div class="cf-note">日本最大二手舶来品连锁的熊本店。两层。80-90 年代美式复古，牛仔、户外装、古着衬衫。¥3,000-13,000。氛围热闹不吓人。</div>
+<div class="cf-hours">🕐 11:00-20:00</div>
+</div>
+
+<div class="cafe" id="shop-recollection">
+<div class="cf-name">recollection vintage<span class="cf-type">Vintage · 欧系</span></div>
+<div class="cf-addr">📍 上通附近</div>
+<div class="cf-note">欧洲 vintage 为主（Barbour、Levi's 档案款、Stone Island、Dries Van Noten 等）。比 JAM 更精品、更贵，更有故事。<strong>目前在装修中，去前先查 Instagram</strong>。</div>
+<div class="cf-hours">🕐 查 Instagram @recollection__vintage</div>
+</div>
+
+<details class="more"><summary>想多玩一点？</summary><div class="more-list">
+· 熊本市電（市内有轨电车）本身就是文化体验——日本最老级的电车之一，慢慢坐一圈看街景<br>
+· 5/4 是"みどりの日（绿之日）"，很多博物馆免费或半价<br>
+· 如果不想出门，就在 Airbnb 用附近超市买的食材做晚饭
+</div></details>
+</div>
+
+<!-- Day 6 鹿儿岛 -->
+<div class="day" id="day6">
+<h3>Day 6 · 5/5（周二·儿童节）🐗 日归鹿儿岛 · 奇迹另一端 <span class="weather" data-date="2026-05-05" data-city="kagoshima">⏳ 鹿儿岛</span></h3>
+<span class="tag tag-daytrip">日归</span><span class="tag tag-culture">文化</span><span class="tag tag-eat">吃</span>
+
+<div class="daytrip-banner"><strong>🚅 核心日归 #3</strong>。是枝裕和《奇迹》里哥哥住的城市。樱岛火山每天冒烟，满街火山灰。</div>
+
+<div class="culture" style="margin:14px 0">
+<div class="c-type">行前必看</div>
+<div class="c-title">是枝裕和《奇跡》I Wish (2011)</div>
+<div class="c-desc">前一晚务必看。看完了你们第二天走的路线（熊本 → 鹿儿岛中央 → 市电 → 仙巌園看樱岛），就是电影里哥哥的日常。</div>
+</div>
 
 <div class="transport">
-<strong>🚅 熊本 → 鹿儿岛中央</strong> · 九州新干线「みずほ」或「さくら」。
-<div class="time-box"><strong>建议班次：</strong>熊本 9:10 → 鹿儿岛中央 9:55（みずほ601号）· <span class="yen">¥6,500/人单程</span><span class="rmb">（约 312 元）</span><br>
-<strong>回程：</strong>鹿儿岛中央 18:32 → 熊本 19:17</div>
+<strong>🚅 熊本 → 鹿儿岛中央 · 上午去</strong>
+<div class="timetable">
+<div class="tt-head">上午班次</div>
+<div class="tt-row"><span class="tt-time">8:11</span><span class="tt-train">みずほ601号</span><span class="tt-dur">→ 8:56（45 分钟）</span></div>
+<div class="tt-row"><span class="tt-time">8:45</span><span class="tt-train">さくら401号</span><span class="tt-dur">→ 9:42（57 分钟）</span></div>
+<div class="tt-row"><span class="tt-time">9:11</span><span class="tt-train">みずほ603号</span><span class="tt-dur">→ 9:56</span></div>
+<div class="tt-row"><span class="tt-time">10:11</span><span class="tt-train">さくら403号</span><span class="tt-dur">→ 11:08</span></div>
+<div class="tt-note">Mizuho 最快 45 分钟（停靠少）· Sakura 57 分钟 · 自由席 <span class="yen">¥6,500/人</span>（约 312 元）</div>
+</div>
 </div>
 
-<p>到了买一张 <strong>CUTE 一日通票</strong>（<span class="yen">¥1,300</span>，含市电+City View巴士+樱岛渡轮）。推荐路线：</p>
-<ol style="margin:10px 0 10px 24px;font-size:.88rem;color:#6b6560;line-height:2">
-<li>上午：仙巌園（岛津家园林，樱岛全景）· 门票 ¥1,000</li>
-<li>下午：渡轮去樱岛 · Island View 巴士环岛（55分钟，¥700）· 看火山冒烟</li>
-<li>傍晚：天文館吃晚餐 + 白熊冰</li>
+<p>到鹿儿岛中央站后买 <strong>CUTE 一日通票</strong>（<span class="yen">¥1,300</span>，约 62 元）——含市电+City View 巴士+樱岛渡轮。</p>
+
+<p><strong>推荐路线：</strong></p>
+<ol style="margin:8px 0 10px 24px;font-size:.88rem;color:#6b6560;line-height:2">
+<li>上午：坐 City View 巴士去<strong>仙巌園</strong>（岛津家园林，以樱岛作"借景"，¥1,000 门票，约 48 元）</li>
+<li>午餐：站前吃黑豚</li>
+<li>下午：坐渡轮去<strong>樱岛</strong>（15 分钟）→ Island View 巴士环岛一圈（55 分钟，¥700）→ 火山展望台+免费足汤</li>
+<li>傍晚：回市区到<strong>天文館</strong>吃晚餐+白熊冰</li>
 </ol>
 
-<div class="meal m-lunch" id="dt-kago"><div class="meal-label ll">午餐 · 黑豚炸猪排</div>
+<div class="meal m-lunch" id="r-kurobuta"><div class="meal-label ll">午餐 · 黑豚炸猪排</div>
 <div class="name">鹿児島黒豚ろっぱく亭（Kurobuta Roppakutei）</div>
-<div class="detail">鹿儿岛黑豚专门店，最有名的是厚切老熟炸猪排和黑豚涮锅。<strong>就在鹿儿岛中央站步行3分钟</strong>。全部熟食。</div>
+<div class="detail">鹿儿岛黑豚（Berkshire）专门店，最有名是厚切老熟炸猪排和黑豚涮锅。<strong>鹿儿岛中央站西口步行 3 分钟</strong>，一下新干线就能吃到。全部熟食。</div>
 <div class="hours">🕐 午餐 11:00-14:30 · 晚餐 17:30-22:30 · 全年无休</div>
-<div class="price"><span class="yen">午餐 ¥1,500-2,500</span><span class="rmb">（约 72-120 元）</span></div>
+<div class="price"><span class="yen">午餐 ¥1,500-2,500 · 晚餐 ¥2,000-3,500</span><span class="rmb">（约 72-120 元）</span></div>
 <div class="who">🦛 推荐指数 ★★★★★</div></div>
 
 <div class="meal m-tea" id="r-mujaki"><div class="meal-label lt">下午茶 · 鹿儿岛名物</div>
 <div class="name">天文館むじゃき 本店（Mujaki）</div>
-<div class="detail"><strong>白熊冰</strong>的发源地（1949年创业）——刨冰+炼乳+水果+北极熊脸。</div>
+<div class="detail"><strong>白熊冰（しろくま）</strong>的发源地（1949 年创业）——刨冰+炼乳+水果+北极熊造型脸。是鹿儿岛的灵魂甜品。</div>
 <div class="hours">🕐 11:00-22:00 · 无定休</div>
 <div class="price"><span class="yen">¥1,000-1,050</span><span class="rmb">（约 48-50 元）</span></div></div>
 
 <div class="meal m-dinner" id="r-yataimura"><div class="meal-label ld">晚餐 · 屋台村</div>
 <div class="name">鹿児島ふるさと屋台村</div>
-<div class="detail">直接连接鹿儿岛中央站出口。多家小店集合。<strong>吃完走两步坐新干线回熊本</strong>。</div>
+<div class="detail">直接连接鹿儿岛中央站出口。多家小店集合，每家做不同的地方料理——黑豚、烤鱼、萨摩扬。<strong>吃完走两步坐新干线回熊本</strong>。</div>
 <div class="hours">🕐 多数 17:00-23:00</div>
 <div class="price"><span class="yen">¥1,500-3,000/人</span><span class="rmb">（约 72-144 元/人）</span></div></div>
+
+<div class="transport tt-return">
+<strong>🚅 鹿儿岛中央 → 熊本 · 返程</strong>
+<div class="timetable tt-return">
+<div class="tt-head">晚间班次</div>
+<div class="tt-row"><span class="tt-time">18:32</span><span class="tt-train">みずほ612号</span><span class="tt-dur">→ 19:17</span></div>
+<div class="tt-row"><span class="tt-time">19:32</span><span class="tt-train">さくら566号</span><span class="tt-dur">→ 20:29</span></div>
+<div class="tt-row"><span class="tt-time">20:32</span><span class="tt-train">みずほ616号</span><span class="tt-dur">→ 21:17</span></div>
+<div class="tt-last">末班约 21:32 左右</div>
+</div>
 </div>
 
-<div class="day" id="day9">
-<h3>Day 9 · 5/8（周五）灵活日 <span class="weather" data-date="2026-05-08" data-city="kumamoto">⏳ 熊本</span></h3>
+<details class="more"><summary>想多玩一点？</summary><div class="more-list">
+· 仙巌園里的"岛津斉彬"纪念（他是西郷隆盛的主君，促成明治维新）<br>
+· 「尚古集成館」在仙巌園旁边，是日本现存最古老的西式石造工厂（1865 年）· UNESCO 世界遗产<br>
+· 指宿砂蒸（天然砂浴）更南边，单独一天行程，这次可能来不及<br>
+· 时间紧可只去仙巌園+天文館，不去樱岛
+</div></details>
+</div>
+
+<!-- Day 7 灵活 -->
+<div class="day" id="day7">
+<h3>Day 7 · 5/6（周三·黄金周末日）🛌 灵活日 / 选择日 <span class="weather" data-date="2026-05-06" data-city="kumamoto">⏳ 熊本</span></h3>
 <span class="tag tag-rest">灵活</span>
 
-<p>就剩这一天灵活安排了，看心情和精力。可以做这些选择之一：</p>
+<p>黄金周最后一天，这一天让你们喘口气。可以做这些组合：</p>
 <ul style="margin:10px 0 10px 24px;font-size:.88rem;color:#6b6560;line-height:2">
-<li>🛌 <strong>休息</strong>——咖啡店、下通商店街、水前寺散步，慢慢吃点东西</li>
-<li>🎒 <strong>选 1 个日归</strong>（从下面的"日归选项"里挑）· 5/8 是周五，山鹿/岛原/柳川/人吉/天草都可选</li>
-<li>🍱 <strong>深度探店</strong>——下通商店街+新市街一带的小居酒屋、甜品店、咖啡馆，把没吃过的熊本料理补上</li>
+<li>🛌 <strong>完全休息日</strong>——Airbnb 里睡到中午，做饭，看看书，黄金周过后 5/7 再开始活动</li>
+<li>☕ <strong>昨天没去的咖啡店</strong>——补一下 Day 5 没去成的几家</li>
+<li>🏪 <strong>熊本市内补食</strong>——「菅乃屋」再吃一次马肉，或去「からし蓮根本舗」吃芥末莲藕</li>
+<li>🎨 <strong>熊本现代美术馆</strong>（免费区域+蔦屋书店）——文艺补给</li>
 </ul>
 </div>
 
+<!-- Day 8 文学深度 -->
+<div class="day" id="day8">
+<h3>Day 8 · 5/7（周四）📖 熊本文学深度日 <span class="weather" data-date="2026-05-07" data-city="kumamoto">⏳ 熊本</span></h3>
+<span class="tag tag-culture">文化</span><span class="tag tag-walk">逛</span>
+
+<p>黄金周过完，人流回归正常。这天专门做文学寻访——熊本因为夏目漱石、小泉八云、宫本武藏三人的在此长居，是九州最有文学厚度的城市之一。</p>
+
+<div class="cafe" id="lit-soseki">
+<div class="cf-name">夏目漱石内坪井旧居（Soseki Uchitsuboi Former Residence）<span class="cf-type">文学遗迹</span></div>
+<div class="cf-addr">📍 中央区内坪井町4-22（市电水道町下车走 10 分钟）</div>
+<div class="cf-note">漱石在熊本 4 年里住过 6 处房子，这是第五处，也是他住得最久的（1 年 8 个月）。儿子夏目伸六在这里出生。保留着明治年代的日式武家住宅格局。<strong>免费</strong>。非常安静，整栋房子几乎没人，可以一个人坐在木地板上发呆。</div>
+<div class="cf-hours hours-warn">🕐 9:30-16:30 · <strong>周一定休</strong>（遇假日顺延）· <span class="yen">免费</span></div>
+</div>
+
+<div class="cafe" id="lit-hearn">
+<div class="cf-name">小泉八雲熊本旧居（Lafcadio Hearn Former Residence）<span class="cf-type">文学遗迹</span></div>
+<div class="cf-addr">📍 中央区安政町2-6（鹤屋百货后方，市电通町筋下车步行）</div>
+<div class="cf-note">八云（Lafcadio Hearn）1891-1894 年在熊本教书时的住所。日式木造武家屋。进去就能想象他在这里听日本仆人讲鬼故事的场景——后来的《怪谈》都由此孕育。</div>
+<div class="cf-hours hours-warn">🕐 9:30-16:30 · <strong>周一定休</strong> · <span class="yen">¥200（约 10 元）</span>· 电话 096-354-7842</div>
+</div>
+
+<div class="meal m-lunch"><div class="meal-label ll">午餐 · 市内任选</div>
+<div class="detail">两处旧居都在市中心。午餐可以去之前没去的赤牛店，或者随便找一家下通小餐厅。</div></div>
+
+<div class="cafe" id="lit-musashi">
+<div class="cf-name">霊巌洞 & 雲巌禅寺（Reigandō Cave & Unganzenji Temple）<span class="cf-type">文学遗迹 · 宫本武藏</span></div>
+<div class="cf-addr">📍 西区松尾町平山589 金峰山（从市中心打车 30 分钟）</div>
+<div class="cf-note"><strong>宫本武藏最后几年闭关写《五轮书》的洞穴</strong>。洞大概 6 米见方，有一块他打坐的石头。进入要先穿过雲巌禅寺（曹洞宗），路上很多罗汉石像。整个地方小且安静，慢慢走 1-1.5 小时。</div>
+<div class="cf-hours">🕐 8:00-17:00 · <span class="yen">¥300（约 14 元）</span></div>
+</div>
+
+<div class="cafe" id="lit-shimada">
+<div class="cf-name">島田美術館（Shimada Museum of Art）<span class="cf-type">武藏书画刀剑</span></div>
+<div class="cf-addr">📍 熊本市西区島崎4-5-28（市内，与霊巌洞同方向）</div>
+<div class="cf-note"><strong>日本现存武藏相关文物的 1/3 在这里</strong>。最珍贵：1651 年《五轮书·风之卷》手抄本（武藏托付给弟子的那本）。还有武藏亲笔画的水墨画——一个武人同时也是画家。</div>
+<div class="cf-hours hours-warn">🕐 10:00-17:00 · <strong>周二+周三定休</strong> · <span class="yen">¥800（约 38 元）</span></div>
+</div>
+
+<div class="meal m-dinner"><div class="meal-label ld">晚餐 · 熊本本地居酒屋</div>
+<div class="detail">下通/新市街一带找一家当地居酒屋收尾文学深度日。菜单有「馬」或「あか牛」就对了。约 ¥2,500-3,500/人（约 120-168 元）。</div></div>
+
+<details class="more"><summary>想多玩一点？</summary><div class="more-list">
+· 夏目漱石在熊本时常去<strong>水前寺成趣園</strong>（Day 2 去过的那个），出水神社里有他的俳句碑<br>
+· <strong>武蔵塚</strong>（武藏的坟墓）在熊本市东北，若有时间可顺路<br>
+· <strong>熊本大学五高纪念馆</strong>（原第五高等学校，漱石和八云都在这里教过书）偶尔开放<br>
+· 文学日可以搭配午餐去「橙书店」坐一下——书店有漱石/八云的作品区
+</div></details>
+</div>
+
+<!-- Day 9 灵活 -->
+<div class="day" id="day9">
+<h3>Day 9 · 5/8（周五）🎒 灵活日归 / 或 柳川 <span class="weather" data-date="2026-05-08" data-city="kumamoto">⏳ 熊本</span></h3>
+<span class="tag tag-rest">灵活</span>
+
+<p>最后一个熊本日。可以休整也可以再选一个日归。下面按难度从易到难：</p>
+</div>
+
 <div class="dt-options">
-<h3>🎒 从熊本出发的日归选项（灵活挑选）</h3>
-<p style="font-size:.85rem;color:#6b6560;margin-bottom:12px">按交通时间从短到长排序。</p>
+<h3>🎒 灵活日归选项</h3>
+<p style="font-size:.85rem;color:#6b6560;margin-bottom:12px">按交通时间排序。核心日归（福冈/阿苏/鹿儿岛）已排在 Day 3/4/6，下面是补充。</p>
 
 <div class="dt-card" id="dt-yamaga">
 <div class="dt-name">① 山鹿温泉（Yamaga）<span class="dt-highlight">· 最轻松</span></div>
-<div class="dt-time">🚌 巴士 40-50分钟 · <span class="yen">¥1,500</span><span class="rmb">（约 72 元）</span></div>
-<div class="dt-desc">交通最近，适合不想远行的日子。<strong>八千代座</strong>（1910年历史剧场，¥530门票）· <strong>灯笼博物馆</strong> · 20多家温泉浴场可日归入浴。午餐推荐「Café Sakura Sakura」（味噌汤+饭团套餐）或「丸米酱油咖啡」（11:00-15:00，<strong>周一定休</strong>）。<br>
-<strong>最适合：</strong>想泡温泉+体验传统工艺+不想坐太久车</div>
-</div>
-
-<div class="dt-card" id="dt-shimabara">
-<div class="dt-name">② 岛原（Shimabara）<span class="dt-highlight">· 有渡轮体验</span></div>
-<div class="dt-time">🚢 巴士+渡轮 2小时（高速船30分钟）· 单程约 <span class="yen">¥2,000</span><span class="rmb">（约 96 元）</span></div>
-<div class="dt-desc">熊本港坐渡轮过有明海到长崎县岛原。<strong>岛原城</strong>（¥700门票）· 老街散步 · 渡轮本身就是景。<strong>「姫松屋 本店」</strong>当地名物「具雑煮」¥1,200-1,400（11:00-19:00，无定休）。<br>
-<strong>最适合：</strong>想坐船 + 喜欢古城</div>
+<div class="dt-time">🚌 产交巴士 40-50 分钟 · <span class="yen">¥1,500</span><span class="rmb">（约 72 元）</span></div>
+<div class="dt-desc">交通最近。八千代座（1910 年历史剧场，¥530 门票）· 灯笼博物馆 · 20 多家温泉浴场可日归入浴（¥1,500-3,000）。午餐推荐「Café Sakura Sakura」（味噌汤+饭团套餐 ¥1,200-1,500）或「丸米酱油咖啡」（11:00-15:00，<strong>周一定休</strong>）。</div>
 </div>
 
 <div class="dt-card" id="dt-yanagawa">
-<div class="dt-name">③ 柳川（Yanagawa）<span class="dt-highlight">· 鳗鱼名店</span></div>
-<div class="dt-time">🚃 西铁 ~1小时10分 · <span class="yen">¥2,200</span><span class="rmb">（约 106 元）</span></div>
-<div class="dt-desc">福冈县柳川。<strong>护城河游船</strong>（60分钟，¥1,500-2,000，船夫唱民谣）· 古城下町。<strong>「若松屋」</strong>160年老店的<strong>蒸笼鳗鱼饭</strong> ¥2,500-3,500（11:00-20:00，<strong>周三+第3周二定休</strong>）。<br>
-<strong>最适合：🦛 河马必爱（全是鳗鱼肉）</strong></div>
+<div class="dt-name">② 柳川（Yanagawa）<span class="dt-highlight">· 鳗鱼 + 诗</span></div>
+<div class="dt-time">🚃 需过福冈 ~2.5h · <span class="yen">¥4,000-5,000 往返</span><span class="rmb">（约 192-240 元）</span></div>
+<div class="dt-desc"><strong>北原白秋故乡</strong>（前面行前准备里的诗人）。<strong>护城河游船</strong>（60 分钟，¥1,500-2,000，船夫唱民谣）· 白秋生家記念館 · 古城下町。<strong>「若松屋」</strong>160 年老店的<strong>蒸笼鳗鱼饭</strong> ¥2,500-3,500（11:00-20:00，<strong>周三+每月第 3 周二定休</strong>）。从熊本过去绕一下但鳗鱼和游船都是体验。<br>
+<strong>最适合：🦛 河马的鳗鱼</strong> + 读过白秋诗的话特别有共鸣</div>
 </div>
 
-<div class="dt-card" id="dt-hitoyoshi">
-<div class="dt-name">④ 人吉温泉（Hitoyoshi）<span class="dt-highlight">· 观光列车</span></div>
-<div class="dt-time">🚂 JR ~1.5-2小时 · <span class="yen">¥2,500</span><span class="rmb">（约 120 元）</span></div>
-<div class="dt-desc">熊本南部温泉小镇。坐<strong>观光列车「かわせみ やませみ」</strong>或SL人吉蒸汽火车。<strong>球磨川泛舟</strong>（90分钟，¥4,000-5,000，温和清流航线）· 人吉城遗址。<br>
-<strong>最适合：</strong>爱坐列车+想慢悠悠河边散步</div>
+<div class="dt-card" id="dt-shimabara">
+<div class="dt-name">③ 岛原（Shimabara）<span class="dt-highlight">· 渡轮体验</span></div>
+<div class="dt-time">🚢 巴士+渡轮 2 小时（高速船 30 分钟）· <span class="yen">¥2,000 单程</span><span class="rmb">（约 96 元）</span></div>
+<div class="dt-desc">熊本港坐渡轮过有明海到长崎县岛原。岛原城（¥700）· 老街散步 · 渡轮本身就是景。<strong>「姫松屋 本店」</strong>当地名物「具雑煮」¥1,200-1,400（11:00-19:00，无定休）。</div>
+</div>
+
+<div class="dt-card dt-warning" id="dt-hitoyoshi">
+<div class="dt-name">④ 人吉 · 夏目友人帳圣地巡礼 <span class="dt-highlight">⚠️ 交通受限</span></div>
+<div class="dt-time">🚂+🚌 2020 年洪水后 JR 南段断了，需要坐 JR 到八代换巴士</div>
+<div class="dt-desc">《夏目友人帐》作者緑川幸的故乡，整部动漫的乡村风景原型。<strong>但 2020 年球磨洪水破坏了 JR 肥萨线，南段要到 2033 年才恢复</strong>。现状：熊本→八代（JR 可达）→八代→人吉（代行巴士，班次少，约 1.5 小时）。总共 3-3.5 小时单程，日归偏紧张。<br>
+如果是粉丝，可以考虑；不是粉丝就跳过。</div>
 </div>
 
 <div class="dt-card" id="dt-amakusa">
-<div class="dt-name">⑤ 天草海豚<span class="dt-highlight">· 远但有趣</span></div>
-<div class="dt-time">🚃+🚢 约 2-2.5小时单程 · 约 <span class="yen">¥3,200 往返</span><span class="rmb">（约 154 元）</span></div>
-<div class="dt-desc">JR到三角站换渡轮到天草本岛。<strong>野生海豚观察</strong>（98%能看到）· 岛屿景观 · 海鲜料理。<strong>岛上交通不方便，建议租车或包车</strong>。<br>
-<strong>最适合：</strong>想看海豚+愿意多花点时间在路上</div>
+<div class="dt-name">⑤ 天草 · 海豚<span class="dt-highlight">· 远但有趣</span></div>
+<div class="dt-time">🚃+🚢 约 2-2.5 小时单程 · 约 <span class="yen">¥3,200 往返</span><span class="rmb">（约 154 元）</span></div>
+<div class="dt-desc">JR 到三角站换渡轮到天草本岛。野生海豚观察（98% 能看到）· 岛屿景观 · 海鲜料理。<strong>岛上交通不方便，需租车或包车</strong>。</div>
 </div>
 </div>
 
+<!-- Day 10 移动 -->
 <div class="day" id="day10">
-<h3>Day 10 · 5/9（周六）熊本 → 黑川温泉 <span class="weather" data-date="2026-05-09" data-city="kurokawa">⏳ 黑川</span></h3>
+<h3>Day 10 · 5/9（周六）🚌 熊本 → 黑川温泉 <span class="weather" data-date="2026-05-09" data-city="kurokawa">⏳ 黑川</span></h3>
 <span class="tag tag-train">移动</span><span class="tag tag-onsen">温泉</span>
 
+<p>Airbnb 退房，带行李坐巴士去黑川温泉。早上收拾+超市补零食给旅馆路上吃。</p>
+
 <div class="transport">
-<strong>🚌 熊本 → 黑川温泉</strong> · 九州产交巴士（沿途穿过阿苏）。
-<div class="time-box"><strong>建议班次：</strong>桜町BT 9:45 → 黒川温泉 12:14 · <span class="yen">¥2,500/人</span><span class="rmb">（约 120 元）</span>· 约 2.5 小时<br>
-<strong>需提前预约</strong>（通过 Japan Bus Online 或柜台购票）</div>
+<strong>🚌 熊本 → 黑川温泉</strong> · 九州产交巴士（桜町 BT 出发）
+<div class="timetable">
+<div class="tt-head">一天 3 班 · 需提前预约</div>
+<div class="tt-row"><span class="tt-time">9:00</span><span class="tt-train">九州横断バス</span><span class="tt-dur">→ 11:32（2h32m）</span></div>
+<div class="tt-row"><span class="tt-time">10:30</span><span class="tt-train">九州横断バス</span><span class="tt-dur">→ 13:10</span></div>
+<div class="tt-row"><span class="tt-time">14:30</span><span class="tt-train">九州横断バス</span><span class="tt-dur">→ 17:10</span></div>
+<div class="tt-note"><span class="yen">¥2,600/人</span><span class="rmb">（约 125 元）</span>· 预约：<a href="https://kyushubusbooking.com/" target="_blank">kyushubusbooking.com</a> 或到桜町 BT 柜台买票 · <strong>黄金周尾段可能紧张，推荐 9:00 班</strong></div>
+</div>
 </div>
 
 <div class="meal m-lunch" id="r-warokuya"><div class="meal-label ll">午餐 · 黑川村里</div>
 <div class="name">わろく屋（Warokuya）</div>
-<div class="detail">黑川最有名的午餐店，明治时代古民家改造。当地赤牛料理、马肉咖喱、黑炸丸子。</div>
-<div class="hours hours-warn">🕐 10:00-18:00 · <strong>周四定休</strong>（5/9周六可以去）</div>
+<div class="detail">黑川最有名的午餐店，明治时代古民家改造。当地赤牛料理、马肉咖喱、黑炸丸子。走路距离多数旅馆 10 分钟内。</div>
+<div class="hours hours-warn">🕐 10:00-18:00 · <strong>周四定休</strong>（5/9 周六可以去）</div>
 <div class="price"><span class="yen">¥1,200-1,800</span><span class="rmb">（约 58-86 元）</span></div>
 <div class="who">🦛 赤牛丼或炸猪排</div></div>
 
-<p>下午 check in 旅馆后，买一个<strong>入汤手形</strong>（<span class="yen">¥1,500日元</span><span class="rmb">（约 72 元）</span>），可以任选 3 家旅馆泡露天温泉。</p>
+<p>下午 check in 旅馆后，买一个<strong>入汤手形</strong>（<span class="yen">¥1,500</span>，约 72 元的木牌通行证），可以任选 3 家旅馆泡露天温泉。</p>
 
 <div class="meal m-dinner"><div class="meal-label ld">晚餐 · 旅馆怀石料理</div>
-<div class="detail">旅馆含晚餐。<strong>预订时一定要说明</strong>：一位客人不吃生食（「生もの食べられません」）。</div></div>
+<div class="detail">旅馆含晚餐（会席料理）。<strong>预订时一定要说明</strong>：一位客人不吃生食（「生もの食べられません」）。他们会调整菜品为烤物、煮物、火锅。</div>
+<div class="who">🦛🧑 日式旅馆对饮食需求非常体贴</div></div>
 </div>
 
 </div>
@@ -586,43 +928,45 @@ a:hover{text-decoration:underline}
 
 <div class="hotels">
 <h4>🏨 温泉旅馆（含早晚餐）</h4>
+
 <div class="hotel h-ryokan" id="ryokan-fumoto">
 <div class="h-name">⭐ ふもと旅館（Fumoto Ryokan）· 性价比推荐</div>
 <div class="h-price"><span class="yen">约 ¥23,000-25,000日元/人/晚（含两餐）</span><span class="rmb">（约 1,104-1,200 元/人）</span></div>
-<div class="h-note">16间房，<strong>11个免费贷切风吕</strong>（私人包场温泉），数量全黑川第一。部分房间带私人露天风吕。</div>
+<div class="h-note">16 间房，<strong>11 个免费贷切风吕</strong>（私人包场温泉），数量全黑川第一。部分房间带私人露天风吕。河边安静位置。</div>
 <div class="h-times">🕒 入住 15:00 · 退房 10:00 或 11:00</div>
 <div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Fumoto+Ryokan+Kurokawa+Onsen" target="_blank">📍 Google Maps</a></div>
 </div>
+
 <div class="hotel h-ryokan" id="ryokan-shinmeikan">
 <div class="h-name">⭐ 山の宿 新明館（Shinmeikan）· 历史老铺</div>
 <div class="h-price"><span class="yen">约 ¥20,900日元/人/晚（含两餐）</span><span class="rmb">（约 1,003 元/人）</span></div>
-<div class="h-note">约120年历史。<strong>30米长的手工凿洞窟风吕</strong>——前代主人花13年挖出来的，黑川最标志性的温泉之一。</div>
+<div class="h-note">约 120 年历史。<strong>30 米长的手工凿洞窟风吕</strong>——前代主人花 13 年挖出来的，黑川最标志性的温泉之一。馆内 5 个不同温泉。怀石料理用囲炉裏（地炉）现烤。</div>
 <div class="h-times">🕒 入住 15:00 · 退房 10:00</div>
 <div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Shinmeikan+Kurokawa+Onsen" target="_blank">📍 Google Maps</a></div>
 </div>
+
 <div class="hotel h-ryokan" id="ryokan-noshiyu">
 <div class="h-name">⭐ お宿のし湯（Oyado Noshiyu）· 高端</div>
 <div class="h-price"><span class="yen">约 ¥29,700日元/人/晚（含两餐）</span><span class="rmb">（约 1,425 元/人）</span></div>
-<div class="h-note">11间房的小型高端旅馆，4个贷切风吕。怀石料理用九州山珍。整趟旅行的"奖励级"。</div>
+<div class="h-note">11 间房的小型高端旅馆，4 个贷切风吕。怀石料理用九州山珍。整趟旅行的"奖励级"。</div>
 <div class="h-times">🕒 入住 15:00 · 退房 11:00</div>
 <div class="h-link"><a href="https://www.google.com/maps/search/?api=1&query=Oyado+Noshiyu+Kurokawa" target="_blank">📍 Google Maps</a></div>
 </div>
 
-<div class="airbnb" style="background:linear-gradient(135deg,#f7f5f2,#fdfcfa);border-color:#e8e4de">
-<div class="airbnb-title" style="color:#8a8480">🏠 关于黑川的 Airbnb</div>
-<div class="airbnb-desc">黑川的精华就是<strong>温泉旅馆+怀石料理</strong>这个完整体验，Airbnb 选项很少（村里几乎都是传统旅馆）。如果非要 Airbnb 风格的私密住宿，附近的<strong>阿苏 / 小国乡</strong>有些独栋小屋（一晚 ¥15,000-25,000），但要开车，且失去黑川的步行温泉巡游体验。<strong>建议这两晚就老老实实订旅馆吧</strong>。</div>
-<a class="airbnb-link" href="https://www.airbnb.com/s/Kurokawa-Onsen--Japan/homes?adults=2&checkin=2026-05-09&checkout=2026-05-11" target="_blank" style="background:#aaa">🔗 还是想看看？Airbnb 黑川附近 5/9-5/11</a>
-</div>
+<p style="font-size:.82rem;color:#8a8480;margin-top:10px">
+<strong>饮食提示：</strong>预订时务必在"备注"或邮件里写明"ひとりのゲストは生もの（生魚・刺身）が食べられません"（一位客人不吃生鱼/刺身）。
+</p>
 </div>
 
+<!-- Day 11 -->
 <div class="day" id="day11">
-<h3>Day 11 · 5/10（周日）黑川温泉 · 纯粹放空 <span class="weather" data-date="2026-05-10" data-city="kurokawa">⏳ 黑川</span></h3>
+<h3>Day 11 · 5/10（周日）🛀 黑川温泉 · 纯粹放空 <span class="weather" data-date="2026-05-10" data-city="kurokawa">⏳ 黑川</span></h3>
 <span class="tag tag-onsen">温泉</span>
 
-<p>上午在旅馆里泡<strong>晨汤</strong>。然后在村里散步，逛逛小店。下午用入汤手形再去泡一两家。</p>
+<p>上午在旅馆里泡<strong>晨汤</strong>（清晨的露天温泉最舒服，人也最少）。然后在村里散步，逛逛小店。下午用入汤手形再去泡一两家。</p>
 
 <div class="meal m-lunch"><div class="meal-label ll">午餐 · 村里小食</div>
-<div class="detail">わろく屋（5/10周日可以去）或「どらどら」甜品店。</div></div>
+<div class="detail">「わろく屋」（5/10 周日可以去）或「どらどら」甜品店。午餐简单吃点，晚上旅馆还有大餐。</div></div>
 
 <div class="meal m-dinner"><div class="meal-label ld">晚餐 · 旅馆第二晚</div>
 <div class="detail">好旅馆第二晚的菜单会和第一晚不同（避免重复）。</div></div>
@@ -630,21 +974,37 @@ a:hover{text-decoration:underline}
 
 </div>
 
-<!-- ==================== 回福冈 ==================== -->
+<!-- ==================== 回家 ==================== -->
 <div class="sec" id="ret">
 <h2 class="sec-head">回到福冈 · 各自回家</h2>
 <div class="sec-date">5/11（周一）</div>
 
 <div class="day" id="day12">
-<h3>Day 12 · 5/11（周一）黑川 → 福冈机场 <span class="weather" data-date="2026-05-11" data-city="kurokawa">⏳ 黑川</span></h3>
+<h3>Day 12 · 5/11（周一）黑川 → 福冈机场 · 回家 <span class="weather" data-date="2026-05-11" data-city="fukuoka">⏳ 福冈</span></h3>
 <span class="tag tag-train">移动</span>
 
+<div class="meal m-breakfast"><div class="meal-label lb">早餐 · 旅馆最后一餐</div>
+<div class="detail">最后泡一次晨汤，吃完早餐退房。</div></div>
+
 <div class="transport">
-<strong>🚌 黑川温泉 → 福冈/博多站</strong> · 九州横断巴士（直达）。
-<div class="time-box"><strong>建议班次：</strong>黒川温泉 8:58 → 博多 BT 12:26（约 3.5 小时）· <span class="yen">¥2,400/人</span><span class="rmb">（约 115 元）</span>· 一天 3 班</div>
+<strong>🚌 黑川温泉 → 博多站</strong> · 九州横断巴士（直达）
+<div class="timetable">
+<div class="tt-head">一天 3 班 · 需提前预约</div>
+<div class="tt-row"><span class="tt-time">8:58</span><span class="tt-train">九州横断バス</span><span class="tt-dur">→ 12:26（约 3.5 小时）</span></div>
+<div class="tt-row"><span class="tt-time">13:30</span><span class="tt-train">九州横断バス</span><span class="tt-dur">→ 17:00</span></div>
+<div class="tt-row"><span class="tt-time">17:00</span><span class="tt-train">九州横断バス</span><span class="tt-dur">→ 20:30</span></div>
+<div class="tt-note"><span class="yen">¥3,000-3,470/人</span><span class="rmb">（约 144-166 元）</span>· 途径阿苏、由布院。预约：<a href="https://japanbusbooking.com/" target="_blank">japanbusbooking.com</a></div>
+</div>
 </div>
 
-<p>中午到博多，去机场地铁 5 分钟。MM 飞北京，河马飞香港，下次再会。</p>
+<p>到博多后：</p>
+<ul style="margin:10px 0 10px 24px;font-size:.88rem;color:#6b6560;line-height:2">
+<li>博多站 → 福冈机场：地铁空港线 5 分钟直达（¥260）</li>
+<li>有时间可以在博多站地下的<strong>「博多 1 番街」</strong>或<strong>「ラーメン滑走路」</strong>（机场内拉面跑道，8 家店）吃最后一碗拉面</li>
+<li>博多站对面的 KITTE 博多/博多阪急可以买最后的手信——<strong>「通りもん」</strong>（博多通りもん，白皮白豆沙馅）是经典</li>
+</ul>
+
+<p>MM 飞北京，河马飞香港，下次再会 ✈️</p>
 </div>
 
 </div>
@@ -655,60 +1015,56 @@ a:hover{text-decoration:underline}
 
 <div class="jrpass">
 <strong>🚃 JR九州铁路周游券</strong><br><br>
-<strong>推荐：全九州版 5日券</strong>（约 <span class="yen">¥18,500/人</span><span class="rmb">（约 888 元）</span>）<br>
-建议从 <strong>5/4（熊本抵达日）</strong>开始激活，覆盖 5/4-5/8。覆盖：<br>
-· 5/4: 福冈→熊本 ¥5,130<br>
-· 5/6: 熊本↔阿苏 ¥5,000 往返<br>
-· 5/7: 熊本↔鹿儿岛 ¥13,000 往返<br>
-· 5/8: 灵活日如果选 JR 可达的日归（柳川/人吉等）<br>
-合计单买 ¥23,000+ → 5日券 ¥18,500，省 ¥4,500（约 216 元/人）<br><br>
-<strong>巴士不含在JR Pass内</strong>：5/9 熊本→黑川、5/11 黑川→福冈都需要另付。<br>
+<strong>推荐：全九州版 5 日券</strong>（<span class="yen">¥18,500/人</span><span class="rmb">（约 888 元）</span>）<br>
+激活方案推荐：<strong>从 5/2 开始激活</strong>，覆盖 5/2-5/6：<br>
+· 5/2 熊本↔博多（日归福冈）¥10,260 往返<br>
+· 5/3 熊本↔阿苏（日归阿苏）¥5,000 往返<br>
+· 5/6 熊本↔鹿儿岛（日归鹿儿岛）¥13,000 往返<br>
+单买合计 ¥28,000+ → 5 日券 ¥18,500，<strong>省 ¥9,500+（约 456 元/人）</strong><br><br>
+<strong>巴士不含</strong>：5/9 熊本→黑川、5/11 黑川→博多都要另付。<br>
 <a href="https://www.jrkyushu.co.jp/english/railpass/railpass.html" target="_blank">JR九州周游券官网</a>
 </div>
 
 <div class="budget">
 <h3>💰 预算参考（两人 11 晚，不含机票）</h3>
-<div class="b-row"><span class="bl">福冈住宿 4晚</span><span class="bv"><span class="yen">¥36,000-56,000</span><span class="rmb">（约 1,728-2,688 元）</span></span></div>
-<div class="b-row"><span class="bl">熊本住宿 5晚</span><span class="bv"><span class="yen">¥40,000-65,000</span><span class="rmb">（约 1,920-3,120 元）</span></span></div>
-<div class="b-row"><span class="bl">黑川温泉旅馆 2晚（含餐）</span><span class="bv"><span class="yen">¥80,000-120,000</span><span class="rmb">（约 3,840-5,760 元）</span></span></div>
-<div class="b-row"><span class="bl">餐饮（11天）</span><span class="bv"><span class="yen">¥80,000-110,000</span><span class="rmb">（约 3,840-5,280 元）</span></span></div>
-<div class="b-row"><span class="bl">JR Pass + 巴士 + 市内</span><span class="bv"><span class="yen">¥50,000-65,000</span><span class="rmb">（约 2,400-3,120 元）</span></span></div>
-<div class="b-row"><span class="bl">门票+体验+杂费</span><span class="bv"><span class="yen">¥18,000-30,000</span><span class="rmb">（约 864-1,440 元）</span></span></div>
-<div class="b-row"><span class="bl"><strong>合计预估</strong></span><span class="bv"><strong><span class="yen">¥304,000-446,000</span><br><span class="rmb">约 14,600-21,400 元人民币</span></strong></span></div>
+<div class="b-row"><span class="bl">熊本 Airbnb 9 晚（2 人）</span><span class="bv"><span class="yen">¥60,000-100,000</span><span class="rmb">（约 2,880-4,800 元）</span></span></div>
+<div class="b-row"><span class="bl">黑川温泉旅馆 2 晚（含餐）</span><span class="bv"><span class="yen">¥80,000-120,000</span><span class="rmb">（约 3,840-5,760 元）</span></span></div>
+<div class="b-row"><span class="bl">餐饮（11 天，除旅馆含餐外）</span><span class="bv"><span class="yen">¥80,000-120,000</span><span class="rmb">（约 3,840-5,760 元）</span></span></div>
+<div class="b-row"><span class="bl">JR Pass（两人）+ 巴士 + 市内</span><span class="bv"><span class="yen">¥50,000-65,000</span><span class="rmb">（约 2,400-3,120 元）</span></span></div>
+<div class="b-row"><span class="bl">日归门票+体验+入汤手形+杂费</span><span class="bv"><span class="yen">¥20,000-35,000</span><span class="rmb">（约 960-1,680 元）</span></span></div>
+<div class="b-row"><span class="bl"><strong>合计预估</strong></span><span class="bv"><strong><span class="yen">¥290,000-440,000</span><br><span class="rmb">约 13,900-21,100 元</span></strong></span></div>
+<p style="font-size:.78rem;color:#999;margin-top:10px">* Airbnb 省下不少福冈酒店钱，比原方案便宜约 2,000-3,000 元。</p>
 </div>
 
 <div class="urgent">
 <strong>⏰ 现在就需要做的事：</strong><br>
-1. 🔴 MM签证材料 4/14 寄出<br>
-2. 🔴 预订 5/1-5/6 住宿（黄金周福冈+熊本）<br>
-3. 🔴 改 5/11 回程机票（原本是 5/14）<br>
-4. 🟡 预订 5/9-5/10 黑川温泉旅馆<br>
-5. 🟡 预约 5/9 熊本→黑川直达巴士<br>
-6. 🟡 预约 5/11 黑川→博多直达巴士<br>
-7. 🟢 购买 JR九州铁路周游券
+1. 🔴 MM签证材料已 4/14 寄出<br>
+2. 🔴 订机票（等特价，北京→福冈、福冈→北京/香港；<strong>5/11 回程</strong>）<br>
+3. 🟡 预订 5/9-5/10 黑川温泉旅馆<br>
+4. 🟡 预约 5/9 熊本→黑川直达巴士<br>
+5. 🟡 预约 5/11 黑川→博多直达巴士<br>
+6. 🟢 购买 JR九州铁路周游券（可在线提前购买）<br>
+7. 🟢 行前阅读/观影（见📖 行前准备）
 </div>
 </div>
 
 <button class="show-all" onclick="showAll()">展开全部行程</button>
 
 <div class="footer">
-为 MM 和 🦛 定制的九州慢旅行方案 v6.2（含天气预报+Airbnb选项）<br>
-3 个住宿基地 · 11 晚 · 2026 年 4 月 14 日更新 · 天气 by Open-Meteo
+为 MM 和 🦛 定制的九州慢旅行方案 v7（深度版）<br>
+熊本 9 晚 Airbnb · 黑川 2 晚 · 11 晚 · 2026 年 4 月 14 日更新
 </div>
 
 </div>
 
 <script>
-// ============= 页面切换 =============
 function go(id, el) {
   document.querySelectorAll('.sec').forEach(s => s.classList.remove('show'));
   document.getElementById(id).classList.add('show');
   document.querySelectorAll('.nav a').forEach(a => a.classList.remove('on'));
   if (el) el.classList.add('on');
   document.getElementById(id).scrollIntoView({behavior: 'smooth', block: 'start'});
-  // Trigger map resize for newly visible maps
   setTimeout(() => {
-    if (id === 'fukuoka' && maps.fukuoka) maps.fukuoka.resize();
     if (id === 'kumamoto' && maps.kumamoto) maps.kumamoto.resize();
     if (id === 'kurokawa' && maps.kurokawa) maps.kurokawa.resize();
   }, 100);
@@ -721,7 +1077,6 @@ function showAll() {
   setTimeout(() => Object.values(maps).forEach(m => m && m.resize()), 100);
 }
 function focusTarget(targetId, sectionId) {
-  // Show section
   if (sectionId) {
     document.querySelectorAll('.sec').forEach(s => s.classList.remove('show'));
     document.getElementById(sectionId).classList.add('show');
@@ -738,9 +1093,6 @@ function focusTarget(targetId, sectionId) {
     }
   }, 150);
 }
-function focusMarker(markerId, sectionId) {
-  focusTarget(markerId, sectionId);
-}
 
 // ============= Mapbox 互动地图 =============
 mapboxgl.accessToken = 'pk.eyJ1IjoibWVuZ2xpYW4iLCJhIjoiY21ueGY2eDFiMDFwdjJycHZpYjJnYTAxeCJ9.KXt_hoOwgoMGGU7l8Gopyw';
@@ -748,18 +1100,20 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWVuZ2xpYW4iLCJhIjoiY21ueGY2eDFiMDFwdjJycHZpY
 const maps = {};
 
 const COLORS = {
-  city: '#c45d3e',     // 城市基地（红）
-  onsen: '#2d8a6e',    // 温泉/旅馆（绿）
-  daytrip: '#5c6bc0',  // 核心日归（蓝）
-  flex: '#7b5ea7',     // 灵活日归（紫）
-  hotel: '#e6a23c',    // 酒店（橙）
-  food: '#c45d3e',     // 餐厅（红）
-  spot: '#5c6bc0',     // 景点（蓝）
+  city: '#c45d3e',
+  onsen: '#2d8a6e',
+  daytrip: '#5c6bc0',
+  flex: '#7b5ea7',
+  cafe: '#b8895c',
+  culture: '#b8895c',
+  food: '#c45d3e',
+  spot: '#5c6bc0',
+  hotel: '#e6a23c',
 };
 
 function buildPopupHTML(m) {
   const tagBg = COLORS[m.type] || '#888';
-  const tagText = {city:'城市',onsen:'温泉旅馆',daytrip:'核心日归',flex:'灵活日归',hotel:'酒店',food:'餐厅',spot:'景点'}[m.type] || '';
+  const tagText = {city:'基地',onsen:'温泉旅馆',daytrip:'核心日归',flex:'灵活日归',cafe:'咖啡店',culture:'文化地标',food:'餐厅',spot:'景点',hotel:'酒店'}[m.type] || '';
   const linkHTML = m.target
     ? `<a class="pop-link" onclick="focusTarget('${m.target}','${m.section || ''}')">查看详情 →</a>`
     : '';
@@ -774,7 +1128,7 @@ function buildPopupHTML(m) {
 
 function addMarkers(map, markers) {
   markers.forEach(m => {
-    const popup = new mapboxgl.Popup({offset: 25, closeButton: true, maxWidth: '260px'}).setHTML(buildPopupHTML(m));
+    const popup = new mapboxgl.Popup({offset: 25, closeButton: true, maxWidth: '280px'}).setHTML(buildPopupHTML(m));
     new mapboxgl.Marker({color: COLORS[m.type] || '#888', scale: m.scale || 1})
       .setLngLat(m.coords)
       .setPopup(popup)
@@ -782,17 +1136,16 @@ function addMarkers(map, markers) {
   });
 }
 
-// === 封面地图：九州整体路线 ===
+// === 封面：九州整体路线 ===
 const COVER_MARKERS = [
-  {coords: [130.4017, 33.5904], type: 'city', name: '福冈', desc: '九州第一大城市。前 5 晚住这里，最后一天回这里去机场。', target: 'fukuoka', section: 'fukuoka', scale: 1.2},
-  {coords: [130.7079, 32.8031], type: 'city', name: '熊本', desc: '中部基地。住 7 晚，从这里出发日归阿苏、鹿儿岛等。', target: 'kumamoto', section: 'kumamoto', scale: 1.2},
-  {coords: [131.1454, 33.1055], type: 'onsen', name: '黑川温泉', desc: '山谷里的温泉村。最后 2 晚住这里，泡汤+怀石料理收尾。', target: 'kurokawa', section: 'kurokawa', scale: 1.2},
-  {coords: [131.1121, 32.9516], type: 'daytrip', name: '阿苏', desc: '世界最大火山口盆地。从熊本日归（特急 1.5h）。', target: 'day7', section: 'kumamoto'},
-  {coords: [130.5411, 31.5836], type: 'daytrip', name: '鹿儿岛', desc: '九州最南端。新干线 45 分钟到。樱岛火山+黑豚。', target: 'day8', section: 'kumamoto'},
-  {coords: [130.6864, 33.0169], type: 'flex', name: '山鹿温泉', desc: '熊本最近的日归选项（巴士 40 分钟）。温泉+老剧场。', target: 'dt-yamaga', section: 'kumamoto'},
-  {coords: [130.7592, 32.2160], type: 'flex', name: '人吉温泉', desc: '熊本南部，观光列车 + 球磨川泛舟。', target: 'dt-hitoyoshi', section: 'kumamoto'},
-  {coords: [130.3686, 32.7943], type: 'flex', name: '岛原', desc: '坐渡轮过有明海，长崎县的城下町。', target: 'dt-shimabara', section: 'kumamoto'},
-  {coords: [130.4063, 33.1634], type: 'flex', name: '柳川', desc: '福冈县。护城河游船 + 鳗鱼名店。', target: 'dt-yanagawa', section: 'kumamoto'},
+  {coords: [130.7079, 32.8031], type: 'city', name: '熊本（基地·9晚）', desc: 'Airbnb 为家。日归福冈、阿苏、鹿儿岛。', target: 'kumamoto', section: 'kumamoto', scale: 1.3},
+  {coords: [131.1454, 33.1055], type: 'onsen', name: '黑川温泉（2晚）', desc: '最后两晚温泉旅馆收尾。', target: 'kurokawa', section: 'kurokawa', scale: 1.2},
+  {coords: [130.4017, 33.5904], type: 'daytrip', name: '福冈（日归美食）', desc: '日归去吃博多乌冬+牛杂锅+屋台。《奇迹》拍摄地。', target: 'day3', section: 'kumamoto'},
+  {coords: [131.1121, 32.9516], type: 'daytrip', name: '阿苏（日归火山）', desc: '《二百十日》漱石爬的山。草千里+大观峰。', target: 'day4', section: 'kumamoto'},
+  {coords: [130.5411, 31.5836], type: 'daytrip', name: '鹿儿岛（日归奇迹）', desc: '《奇迹》另一端，樱岛+黑豚+白熊冰。', target: 'day6', section: 'kumamoto'},
+  {coords: [130.6864, 33.0169], type: 'flex', name: '山鹿温泉', desc: '灵活日归。温泉+老剧场。', target: 'dt-yamaga', section: 'kumamoto'},
+  {coords: [130.4063, 33.1634], type: 'flex', name: '柳川', desc: '灵活日归。鳗鱼+白秋诗乡。', target: 'dt-yanagawa', section: 'kumamoto'},
+  {coords: [130.3686, 32.7943], type: 'flex', name: '岛原', desc: '灵活日归。渡轮+古城。', target: 'dt-shimabara', section: 'kumamoto'},
 ];
 
 maps.cover = new mapboxgl.Map({
@@ -800,66 +1153,39 @@ maps.cover = new mapboxgl.Map({
   style: 'mapbox://styles/mapbox/outdoors-v12',
   center: [130.85, 32.5],
   zoom: 6.5,
-  cooperativeGestures: false,
 });
 maps.cover.addControl(new mapboxgl.NavigationControl(), 'top-right');
 maps.cover.on('load', () => addMarkers(maps.cover, COVER_MARKERS));
 
-// === 福冈地图 ===
-const FUKUOKA_MARKERS = [
-  // 酒店（橙色）
-  {coords: [130.4232, 33.5912], type: 'hotel', name: 'JR九州ホテルブラッサム福岡', desc: '直连博多站筑紫口，¥13,000-16,000/晚（约 624-768 元）', target: 'h-fk-blossom', section: 'fukuoka'},
-  {coords: [130.4180, 33.5891], type: 'hotel', name: 'コンフォートホテル博多', desc: '博多站对面，含早餐 ¥9,000-12,000/晚（约 432-576 元）', target: 'h-fk-comfort', section: 'fukuoka'},
-  {coords: [130.4128, 33.5926], type: 'hotel', name: 'ドーミーイン博多祇園', desc: '天然温泉+免费夜鸣拉面 ¥11,000-14,000/晚', target: 'h-fk-dormy', section: 'fukuoka'},
-  // 餐厅（红色）
-  {coords: [130.4045, 33.5919], type: 'food', name: '中洲屋台群', desc: 'Day 1 晚餐。河边路边摊，烤鸡皮 ¥2,000-3,000/人', target: 'r-yatai', section: 'fukuoka'},
-  {coords: [130.4123, 33.5934], type: 'food', name: 'かろのうろん', desc: 'Day 2 午餐。1882年博多最老乌冬。¥800-1,000。周二定休', target: 'r-uron', section: 'fukuoka'},
-  {coords: [130.4205, 33.5901], type: 'food', name: 'もつ鍋 一藤 博多店', desc: 'Day 2 晚餐。牛杂锅 ¥3,500/人。需预约。只开晚市', target: 'r-motsunabe', section: 'fukuoka'},
-  {coords: [130.4044, 33.5708], type: 'food', name: 'REC COFFEE 薬院駅前', desc: 'Day 3 早餐。福冈本土精品咖啡 ¥800-1,000', target: 'r-rec', section: 'fukuoka'},
-  {coords: [130.3982, 33.5911], type: 'food', name: 'ShinShin 天神本店', desc: 'Day 3 午餐。当地人的拉面 ¥850。周三定休', target: 'r-shinshin', section: 'fukuoka'},
-  {coords: [130.4118, 33.5938], type: 'food', name: '博多かわ屋（祇園店）', desc: 'Day 3 晚餐。鸡皮串 ¥3,000-4,000/人。河马★★★★★', target: 'r-kawaya', section: 'fukuoka'},
-  {coords: [130.1893, 33.5564], type: 'food', name: '塚本鮮魚店（糸岛）', desc: 'Day 4 午餐。糸岛海鲜店 ¥1,200-1,800', target: 'r-tsukamoto', section: 'fukuoka'},
-  {coords: [130.4067, 33.5915], type: 'food', name: '水炊き 長野', desc: 'Day 4 晚餐。鸡肉白汤锅 ¥4,000-5,000/人。强烈建议预约。周日休', target: 'r-mizutaki', section: 'fukuoka'},
-  // 景点（蓝色）
-  {coords: [130.4108, 33.5934], type: 'spot', name: '栉田神社', desc: '博多旧市街中心。博多祇園山笠祭典发源地'},
-];
-
-maps.fukuoka = new mapboxgl.Map({
-  container: 'map-fukuoka',
-  style: 'mapbox://styles/mapbox/streets-v12',
-  center: [130.41, 33.585],
-  zoom: 12.2,
-});
-maps.fukuoka.addControl(new mapboxgl.NavigationControl(), 'top-right');
-maps.fukuoka.on('load', () => addMarkers(maps.fukuoka, FUKUOKA_MARKERS));
-
-// === 熊本地图（含日归目的地） ===
+// === 熊本地图 ===
 const KUMAMOTO_MARKERS = [
-  // 熊本基地（大红点）
-  {coords: [130.7079, 32.8031], type: 'city', name: '熊本市', desc: '住 7 晚的基地。住宿、餐厅都在市中心。', target: 'kumamoto', section: 'kumamoto', scale: 1.3},
-  // 熊本酒店（小橙点）
-  {coords: [130.7032, 32.8024], type: 'hotel', name: 'Daiwa Roynet Hotel 熊本', desc: '下通商店街旁，赤牛餐厅在2楼 ¥11,000-14,000/晚', target: 'h-km-daiwa', section: 'kumamoto'},
-  {coords: [130.7080, 32.8049], type: 'hotel', name: 'Kumamoto Tokyu REI Hotel', desc: '紧邻市电站 ¥10,000-13,000/晚', target: 'h-km-tokyu', section: 'kumamoto'},
-  {coords: [130.7062, 32.8024], type: 'hotel', name: 'Comfort Hotel 熊本新市街', desc: '性价比最好，含早餐 ¥8,000-11,000/晚', target: 'h-km-comfort', section: 'kumamoto'},
-  // 熊本餐厅
-  {coords: [130.6885, 32.7892], type: 'food', name: '菅乃屋 熊本駅店', desc: 'Day 5 晚餐。马肉专门店 ¥3,500-5,000/人。需预约', target: 'r-suganoya', section: 'kumamoto'},
-  {coords: [130.7032, 32.8024], type: 'food', name: 'Akaushi Dining yoka-yoka', desc: 'Day 6 午餐。熊本赤牛 午套 ¥1,800-2,500', target: 'r-yokayoka', section: 'kumamoto'},
-  {coords: [130.6892, 32.7943], type: 'food', name: '黒亭ラーメン 本店', desc: 'Day 6 晚餐。熊本拉面代表 ¥800-1,200。第3周四休', target: 'r-kokutei', section: 'kumamoto'},
-  // 核心日归（蓝色，大）
-  {coords: [131.1121, 32.9516], type: 'daytrip', name: '阿苏（Day 7 日归）', desc: '🌋 火山口盆地。特急 1.5h。详情看 Day 7。', target: 'day7', section: 'kumamoto', scale: 1.2},
-  {coords: [130.5411, 31.5836], type: 'daytrip', name: '鹿儿岛（Day 8 日归）', desc: '🐗 新干线 45min。樱岛+黑豚。详情看 Day 8。', target: 'day8', section: 'kumamoto', scale: 1.2},
-  // 灵活日归（紫色）
-  {coords: [130.6864, 33.0169], type: 'flex', name: '山鹿温泉', desc: '巴士 40min ¥1,500。温泉+八千代座剧场', target: 'dt-yamaga', section: 'kumamoto'},
-  {coords: [130.3686, 32.7943], type: 'flex', name: '岛原（Shimabara）', desc: '渡轮 30min-1h，长崎县城下町', target: 'dt-shimabara', section: 'kumamoto'},
-  {coords: [130.4063, 33.1634], type: 'flex', name: '柳川（Yanagawa）', desc: '西铁 1h10。船游+鳗鱼。河马必爱', target: 'dt-yanagawa', section: 'kumamoto'},
-  {coords: [130.7592, 32.2160], type: 'flex', name: '人吉温泉', desc: 'JR 1.5-2h。观光列车+球磨川泛舟', target: 'dt-hitoyoshi', section: 'kumamoto'},
-  {coords: [130.1981, 32.4519], type: 'flex', name: '天草（Amakusa）', desc: '约 2-2.5h。野生海豚+岛屿景观', target: 'dt-amakusa', section: 'kumamoto'},
+  {coords: [130.7079, 32.8031], type: 'city', name: '熊本市中心', desc: 'Airbnb 基地。下通/上通商店街一带。', target: 'kumamoto', section: 'kumamoto', scale: 1.3},
+  // 熊本市内餐厅&咖啡
+  {coords: [130.6885, 32.7892], type: 'food', name: '菅乃屋 熊本駅店', desc: 'Day 1 晚餐。马肉专门店 ¥3,500-5,000/人', target: 'r-suganoya', section: 'day1'},
+  {coords: [130.7032, 32.8024], type: 'food', name: 'Akaushi Dining yoka-yoka', desc: 'Day 2 午餐。熊本赤牛 ¥1,800-2,500', target: 'r-yokayoka', section: 'kumamoto'},
+  {coords: [130.7020, 32.8010], type: 'cafe', name: '橙書店 Orange Books', desc: '村上春树朗读过的独立书店咖啡', target: 'cafe-orange', section: 'kumamoto'},
+  {coords: [130.7050, 32.7990], type: 'cafe', name: '珈琲中川', desc: '1976 地下老喫茶。周六 24h', target: 'cafe-nakagawa', section: 'kumamoto'},
+  {coords: [130.6960, 32.8030], type: 'cafe', name: '珈琲回廊', desc: '120 年町家改造咖啡馆', target: 'cafe-kairo', section: 'kumamoto'},
+  {coords: [130.6892, 32.7943], type: 'food', name: '黒亭ラーメン', desc: 'Day 2 晚餐。熊本拉面 ¥800-1,200', target: 'r-kokutei', section: 'kumamoto'},
+  // 文学地标
+  {coords: [130.7160, 32.8117], type: 'culture', name: '夏目漱石内坪井旧居', desc: 'Day 8。漱石在熊本的第 5 处住所。免费。', target: 'lit-soseki', section: 'kumamoto'},
+  {coords: [130.7120, 32.8068], type: 'culture', name: '小泉八雲熊本旧居', desc: 'Day 8。《怪谈》作者住处。¥200', target: 'lit-hearn', section: 'kumamoto'},
+  {coords: [130.6340, 32.8257], type: 'culture', name: '霊巌洞 & 雲巌禅寺', desc: 'Day 8。宫本武藏写《五轮书》的洞穴。', target: 'lit-musashi', section: 'kumamoto'},
+  {coords: [130.6880, 32.8035], type: 'culture', name: '島田美術館', desc: 'Day 8。武藏书画刀剑。¥800。', target: 'lit-shimada', section: 'kumamoto'},
+  // 核心日归
+  {coords: [130.4017, 33.5904], type: 'daytrip', name: '福冈（Day 3）', desc: '🍜 日归美食日。《奇迹》拍摄地', target: 'day3', section: 'kumamoto', scale: 1.2},
+  {coords: [131.1121, 32.9516], type: 'daytrip', name: '阿苏（Day 4）', desc: '🌋 《二百十日》的山', target: 'day4', section: 'kumamoto', scale: 1.2},
+  {coords: [130.5411, 31.5836], type: 'daytrip', name: '鹿儿岛（Day 6）', desc: '🐗 《奇迹》另一端 + 黑豚', target: 'day6', section: 'kumamoto', scale: 1.2},
+  // 灵活
+  {coords: [130.6864, 33.0169], type: 'flex', name: '山鹿温泉', desc: '灵活日归 ¥1,500', target: 'dt-yamaga', section: 'kumamoto'},
+  {coords: [130.4063, 33.1634], type: 'flex', name: '柳川', desc: '白秋故乡+鳗鱼', target: 'dt-yanagawa', section: 'kumamoto'},
+  {coords: [130.3686, 32.7943], type: 'flex', name: '岛原', desc: '渡轮+古城', target: 'dt-shimabara', section: 'kumamoto'},
 ];
 
 maps.kumamoto = new mapboxgl.Map({
   container: 'map-kumamoto',
   style: 'mapbox://styles/mapbox/outdoors-v12',
-  center: [130.6, 32.5],
+  center: [130.7, 32.5],
   zoom: 7,
 });
 maps.kumamoto.addControl(new mapboxgl.NavigationControl(), 'top-right');
@@ -867,10 +1193,10 @@ maps.kumamoto.on('load', () => addMarkers(maps.kumamoto, KUMAMOTO_MARKERS));
 
 // === 黑川地图 ===
 const KUROKAWA_MARKERS = [
-  {coords: [131.1432, 33.1078], type: 'onsen', name: 'ふもと旅館 (Fumoto)', desc: '⭐ 性价比推荐。16 间房，11 个免费贷切风吕。¥23,000-25,000/人', target: 'ryokan-fumoto', section: 'kurokawa'},
-  {coords: [131.1452, 33.1063], type: 'onsen', name: '新明館 (Shinmeikan)', desc: '⭐ 历史老铺。30 米手凿洞窟风吕。¥20,900/人', target: 'ryokan-shinmeikan', section: 'kurokawa'},
-  {coords: [131.1480, 33.1085], type: 'onsen', name: 'お宿のし湯 (Noshiyu)', desc: '⭐ 高端选项。11 间房，4 个贷切风吕。¥29,700/人', target: 'ryokan-noshiyu', section: 'kurokawa'},
-  {coords: [131.1448, 33.1058], type: 'food', name: 'わろく屋 (Warokuya)', desc: '黑川最有名的午餐店。明治古民家。¥1,200-1,800。周四定休', target: 'r-warokuya', section: 'kumamoto'},
+  {coords: [131.1432, 33.1078], type: 'onsen', name: 'ふもと旅館 (Fumoto)', desc: '⭐ 性价比推荐 ¥23,000-25,000/人', target: 'ryokan-fumoto', section: 'kurokawa'},
+  {coords: [131.1452, 33.1063], type: 'onsen', name: '新明館 (Shinmeikan)', desc: '⭐ 历史老铺 ¥20,900/人', target: 'ryokan-shinmeikan', section: 'kurokawa'},
+  {coords: [131.1480, 33.1085], type: 'onsen', name: 'お宿のし湯 (Noshiyu)', desc: '⭐ 高端 ¥29,700/人', target: 'ryokan-noshiyu', section: 'kurokawa'},
+  {coords: [131.1448, 33.1058], type: 'food', name: 'わろく屋 (Warokuya)', desc: '黑川最有名的午餐 ¥1,200-1,800', target: 'r-warokuya', section: 'kumamoto'},
 ];
 
 maps.kurokawa = new mapboxgl.Map({
@@ -881,11 +1207,6 @@ maps.kurokawa = new mapboxgl.Map({
 });
 maps.kurokawa.addControl(new mapboxgl.NavigationControl(), 'top-right');
 maps.kurokawa.on('load', () => addMarkers(maps.kurokawa, KUROKAWA_MARKERS));
-
-// Highlight target style
-const styleEl = document.createElement('style');
-styleEl.textContent = '.highlight-target{background:#fff8e1!important;transition:background 1.8s}';
-document.head.appendChild(styleEl);
 
 // ============= 天气预报（Open-Meteo 免费 API） =============
 const WEATHER_CITIES = {
@@ -914,8 +1235,6 @@ function wmoDesc(c) {
 }
 async function loadWeather() {
   const cache = {};
-  // Open-Meteo 最远预报 16 天，用 forecast_days 让 API 返回未来 16 天；
-  // 我们在 JS 里查找对应日期。这样不论今天是哪天都不会超出 API 范围。
   for (const [key, city] of Object.entries(WEATHER_CITIES)) {
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FTokyo&forecast_days=16`;
     try {
